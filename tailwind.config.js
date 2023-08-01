@@ -19,16 +19,11 @@ module.exports = {
 			center: true,
 		},
 		colors: {
-			'bg-color': '#0d1117',
-			'main-purple': '#785eff',
+			
+			'blue-section': '#0F172B',
 			'text-color': '#d2d3e0bf',
-			'main-green': '#2faf5a',
 			'white': '#ffffff',
 			'black': '#000000',
-			'hover-color': '#37384b42',
-			'sub-menus': '#1D1E2B',
-			'light-blue': '#306EE8',
-			'text-blue': '#A8C0F0',
 
 			// Logo
 

@@ -9,9 +9,3 @@
 .border-user{
 	border: 1px solid #55A2CA;
 }
-
-.bg-wave{
-	background-image: url('../../public/wave.svg');
-	background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-}

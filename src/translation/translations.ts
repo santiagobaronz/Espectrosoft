@@ -6,6 +6,10 @@ export const translations = {
 		language:{
 			spanish: 'Español',
 			english: 'English'
+		},
+		main_alert:{
+			spanish: 'Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web',
+			english: 'Get a 10% discount with the code ESPECTROWEB on web development services'
 		}
 	},
 

@@ -13,10 +13,9 @@ import Link from 'next/link';
 
 import { FiChevronDown, FiLoader, FiX } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { infoMenu } from './Items/InfoMenu';
 import { useGlobalContext } from '../context/translations';
-import { translations } from '../translation/translations';
 import Translation from '../translation/Translation';
 import { BsArrowRight, BsArrowRightShort, BsBell, BsFillPersonFill } from 'react-icons/bs';
 
@@ -154,7 +153,7 @@ export default function Menu() {
 					<div className='max-lg:hidden'>
 						<BsBell></BsBell>
 					</div>
-					<p>Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web</p>
+					<Translation section='settings' translationKey='main_alert' />
 				</div>
 			</div>
 

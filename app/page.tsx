@@ -1,11 +1,11 @@
 'use client'
 
-import Translation from '@/src/translation/Translation';
+import Introduction from '@/src/components/Home/Introduction'
 import React from 'react'
 
 export default function HomePage() {
 
 	return (
-		<p></p>
+		<Introduction></Introduction>
 	)
 }

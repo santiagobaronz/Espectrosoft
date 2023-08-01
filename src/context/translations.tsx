@@ -13,7 +13,7 @@ const GlobalContext = createContext<ContextProps>({
 })
 
 export const GlobalContextProvider = ({ children }: { children: ReactNode }) => {
-	const [selectedLanguage, setSelectedLanguage] = useState('english');
+	const [selectedLanguage, setSelectedLanguage] = useState('spanish');
 
 	return (
 		<GlobalContext.Provider value={{ selectedLanguage, setSelectedLanguage }}>
