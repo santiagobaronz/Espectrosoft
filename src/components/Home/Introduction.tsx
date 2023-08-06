@@ -1,12 +1,13 @@
 import React from 'react'
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from './utils/Dots';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
 	wrapper: {
 		position: 'relative',
-		paddingTop: rem(120),
-		paddingBottom: rem(80),
+		paddingTop: rem(30),
+		paddingBottom: rem(50),
 
 		[theme.fn.smallerThan('sm')]: {
 			paddingTop: rem(80),
@@ -35,12 +36,13 @@ const useStyles = createStyles((theme) => ({
 
 	title: {
 		textAlign: 'center',
-		fontWeight: 800,
+		fontWeight: 700,
 		fontSize: rem(50),
+		marginRight: '200px',
+		marginLeft: '200px',
 		letterSpacing: -1,
 		color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 		marginBottom: theme.spacing.xs,
-		fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
 		[theme.fn.smallerThan('xs')]: {
 			fontSize: rem(28),
@@ -92,13 +94,23 @@ export default function Introduction() {
 	const { classes } = useStyles();
 
 	return (
-		<Container className={classes.wrapper} size={1400}>
+		<Container className={`${classes.wrapper} mt-12`} size={1400}>
 			<Dots className={classes.dots} style={{ left: 0, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 60, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 0, top: 140 }} />
 			<Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
 			<div className={classes.inner}>
+
+				<div className='flex justify-center gap-x-7 mb-8'>
+					<h2>Categorias en tendencia</h2>
+					<div>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Diseño web</Link>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Hosting</Link>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Dominios</Link>
+					</div>
+				</div>
+
 				<Title className={classes.title}>
 					Soluciones{' '}
 					<Text component="span" className={classes.highlight} inherit>
@@ -119,13 +131,13 @@ export default function Introduction() {
 					</Text>
 				</Container>
 
-				<div className={classes.controls}>
-					<Button className={classes.control} size="lg" variant="default" color="gray">
-						Book a demo
+				<div className='flex justify-center gap-x-3 mt-8'>
+					<Button className='font-medium' size="lg" variant="default" color="gray">
+						Ver portafolio
 					</Button>
-					<Button className={classes.control} size="lg">
-						Purchase a license
-					</Button>
+					<button className='bg-dark-blue font-medium text-white px-6 rounded hover:px-8 transition-all'>
+						Contactar con ventas
+					</button>
 				</div>
 			</div>
 		</Container>
