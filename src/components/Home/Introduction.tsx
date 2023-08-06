@@ -6,12 +6,12 @@ import Link from 'next/link';
 const useStyles = createStyles((theme) => ({
 	wrapper: {
 		position: 'relative',
-		paddingTop: rem(30),
+		paddingTop: rem(20),
 		paddingBottom: rem(50),
 
 		[theme.fn.smallerThan('sm')]: {
-			paddingTop: rem(80),
-			paddingBottom: rem(60),
+			paddingTop: rem(40),
+			paddingBottom: rem(40),
 		},
 	},
 
@@ -44,8 +44,14 @@ const useStyles = createStyles((theme) => ({
 		color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 		marginBottom: theme.spacing.xs,
 
+		[theme.fn.smallerThan('md')]: {
+			marginRight: '30px',
+			marginLeft: '30px',
+			marginBottom: '40px'
+		},
+
 		[theme.fn.smallerThan('xs')]: {
-			fontSize: rem(28),
+			fontSize: rem(40),
 			textAlign: 'left',
 		},
 	},
@@ -58,6 +64,8 @@ const useStyles = createStyles((theme) => ({
 		textAlign: 'center',
 
 		[theme.fn.smallerThan('xs')]: {
+			marginRight: '30px',
+			marginLeft: '30px',
 			textAlign: 'left',
 			fontSize: theme.fontSizes.md,
 		},
@@ -67,10 +75,6 @@ const useStyles = createStyles((theme) => ({
 		marginTop: theme.spacing.lg,
 		display: 'flex',
 		justifyContent: 'center',
-
-		[theme.fn.smallerThan('xs')]: {
-			flexDirection: 'column',
-		},
 	},
 
 	control: {
@@ -87,6 +91,7 @@ const useStyles = createStyles((theme) => ({
 				marginLeft: 0,
 			},
 		},
+		
 	},
 }));
 
@@ -94,7 +99,7 @@ export default function Introduction() {
 	const { classes } = useStyles();
 
 	return (
-		<Container className={`${classes.wrapper} mt-12`} size={1400}>
+		<Container className={`${classes.wrapper} md:mt-12`} size={1400}>
 			<Dots className={classes.dots} style={{ left: 0, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 60, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 0, top: 140 }} />
@@ -102,7 +107,7 @@ export default function Introduction() {
 
 			<div className={classes.inner}>
 
-				<div className='flex justify-center gap-x-7 mb-8'>
+				<div className='flex justify-center gap-x-6 mb-8 max-md:hidden'>
 					<h2>Categorias en tendencia</h2>
 					<div>
 						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Diseño web</Link>
@@ -131,11 +136,11 @@ export default function Introduction() {
 					</Text>
 				</Container>
 
-				<div className='flex justify-center gap-x-3 mt-8'>
-					<Button className='font-medium' size="lg" variant="default" color="gray">
+				<div className='md:flex justify-center gap-x-3 mt-8 max-md:ml-8'>
+					<Button className='font-medium max-md:mb-3 max-md:mr-5' size="lg" variant="default" color="gray">
 						Ver portafolio
 					</Button>
-					<button className='bg-dark-blue font-medium text-white px-6 rounded hover:px-8 transition-all'>
+					<button className='bg-dark-blue font-medium text-white px-6 max-md:py-4 rounded hover:px-8 transition-all'>
 						Contactar con ventas
 					</button>
 				</div>
