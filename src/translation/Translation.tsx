@@ -12,7 +12,7 @@ const Translation: React.FC<TranslationProps> = ({ section, translationKey }) =>
 	const selectedLanguage = useGlobalContext().selectedLanguage;
 	//@ts-ignore
 	const translatedText = translations[section][translationKey][selectedLanguage]
-	return <div>{translatedText}</div>;
+	return <>{translatedText}</>;
 };
 
 export default Translation;

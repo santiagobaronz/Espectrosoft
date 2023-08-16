@@ -2,11 +2,12 @@ import React from 'react'
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from './utils/Dots';
 import Link from 'next/link';
+import Translation from '@/src/translation/Translation';
 
 const useStyles = createStyles((theme) => ({
 	wrapper: {
 		position: 'relative',
-		paddingTop: rem(20),
+		marginTop: rem(0),
 		paddingBottom: rem(50),
 
 		[theme.fn.smallerThan('sm')]: {
@@ -22,7 +23,7 @@ const useStyles = createStyles((theme) => ({
 
 	dots: {
 		position: 'absolute',
-		color: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+		color: '#228be61b',
 
 		[theme.fn.smallerThan('sm')]: {
 			display: 'none',
@@ -91,7 +92,7 @@ const useStyles = createStyles((theme) => ({
 				marginLeft: 0,
 			},
 		},
-		
+
 	},
 }));
 
@@ -99,7 +100,7 @@ export default function Introduction() {
 	const { classes } = useStyles();
 
 	return (
-		<Container className={`${classes.wrapper} md:mt-12`} size={1400}>
+		<Container className={`${classes.wrapper} md:pt-10 md:pb-32`} size={1400}>
 			<Dots className={classes.dots} style={{ left: 0, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 60, top: 0 }} />
 			<Dots className={classes.dots} style={{ left: 0, top: 140 }} />
@@ -107,44 +108,71 @@ export default function Introduction() {
 
 			<div className={classes.inner}>
 
-				<div className='flex justify-center gap-x-6 mb-8 max-md:hidden'>
-					<h2>Categorias en tendencia</h2>
-					<div>
-						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Diseño web</Link>
-						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Hosting</Link>
-						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>Dominios</Link>
+				<div className='flex justify-center items-center gap-x-6 mb-8 max-md:hidden'>
+					<h2><Translation section='homePage' translationKey='category' /></h2>
+					<div className='flex'>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>
+							<Translation section='homePage' translationKey='web_design' />
+						</Link>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>
+							<Translation section='homePage' translationKey='hosting' />
+						</Link>
+						<Link href={'#'} className='bg-dark-blue text-sm rounded px-2 py-1 mr-3 text-white'>
+							<Translation section='homePage' translationKey='domains' />
+						</Link>
 					</div>
 				</div>
 
 				<Title className={classes.title}>
-					Soluciones{' '}
+					<Translation section='homePage' translationKey='main_title_1' />{' '}
 					<Text component="span" className={classes.highlight} inherit>
-						web
+						<Translation section='homePage' translationKey='main_title_2' />
 					</Text>{' '}
-					hechas a la medida:{' '}
+					<Translation section='homePage' translationKey='main_title_3' />{' '}
 					<Text component="span" className={classes.highlight} inherit>
-						Impulsa
+						<Translation section='homePage' translationKey='main_title_4' />
 					</Text>{' '}
-					tu éxito en internet
+					<Translation section='homePage' translationKey='main_title_5' />
 				</Title>
 
 				<Container p={0} size={850}>
 					<Text size="lg" color="dimmed" className={classes.description}>
-						El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para
-						construirlo. Te ofrecemos soluciones web personalizadas, basadas en tecnología
-						de vanguardia y diseñadas para impulsar tu crecimiento y éxito.
+						<Translation section='homePage' translationKey='main_description' />
 					</Text>
 				</Container>
 
 				<div className='md:flex justify-center gap-x-3 mt-8 max-md:ml-8'>
-					<Button className='font-medium max-md:mb-3 max-md:mr-5' size="lg" variant="default" color="gray">
-						Ver portafolio
+					<Button className='font-medium max-md:mb-3 max-md:mr-5 bg-white' size="lg" variant="default">
+						<Translation section='homePage' translationKey='view_portfolio' />
 					</Button>
 					<button className='bg-dark-blue font-medium text-white px-6 max-md:py-4 rounded hover:px-8 transition-all'>
-						Contactar con ventas
+						<Translation section='homePage' translationKey='contact_sells' />
 					</button>
 				</div>
 			</div>
+
+			<hr className='text-[#D7E3F2] w-1/2 m-auto mt-12' />
+
+			<div className='mt-3 pt-8 container max-sm:px-8'>
+				<p className='text-center text-sm text-gray'>
+					<Translation section='homePage' translationKey='about_brands' />
+				</p>
+				<div className='sm:flex justify-center gap-x-10 mt-10'>
+					<div className='flex sm:gap-x-10 max-sm:mb-2'>
+						<img src="/logos/wordpress.png" alt="" className='w-28 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="/logos/cpanel.png" alt="" className='w-28 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+					</div>
+
+					<div className='flex sm:gap-x-10 max-sm:mb-3'>
+						<img src="/logos/litespeed.png" alt="" className='w-28 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="/logos/gsuite.png" alt="" className='w-28 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+					</div>
+
+
+					<img src="/logos/cloudflare.png" alt="" className='w-28 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+				</div>
+			</div>
+
 		</Container>
 	);
 }

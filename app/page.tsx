@@ -7,7 +7,7 @@ import React from 'react'
 export default function HomePage() {
 
 	return (
-		<div>
+		<div className='pt-10'>
 			<Introduction></Introduction>
 			<Services></Services>
 		</div>

@@ -34,8 +34,10 @@ export default function RootLayout({ children, }: {
 			<body className={`${pageFont.className}`}>
 				<GlobalContextProvider>
 					<MantineProvider>
-						<Header></Header>
-						{children}
+						<div className='bg-[#f0f6ff]'>
+							<Header></Header>
+							{children}
+						</div>
 					</MantineProvider>
 				</GlobalContextProvider>
 			</body>

@@ -9,3 +9,17 @@
 .border-user{
 	border: 1px solid #55A2CA;
 }
+
+.border-technologies{
+	border-top:  1px solid rgba(206, 219, 237, 0.728);
+	margin: 40px auto 0 auto;
+}
+
+.main-content{
+	background-image: url('/borders/main.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -3vw;
+    padding: 120px 24px 40px;
+}
