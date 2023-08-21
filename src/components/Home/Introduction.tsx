@@ -1,5 +1,4 @@
 import React from 'react'
-import { Dots } from './utils/Dots';
 import Link from 'next/link';
 import Translation from '@/src/translation/Translation';
 import { BsArrowRight } from 'react-icons/bs';

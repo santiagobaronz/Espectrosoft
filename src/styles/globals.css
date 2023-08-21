@@ -10,6 +10,13 @@
 	border: 1px solid #bebebe;
 }
 
+.bg-header{
+	background-image: url('/assets/bg-header.png');
+	background-repeat: no-repeat;
+	background-size: 72%;
+	background-position: 100%;
+}
+
 .introduction{
 	background-image: url('/assets/introduction.jpg');
 	background-size: cover;
