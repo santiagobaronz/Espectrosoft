@@ -40,17 +40,17 @@ export default function Introduction() {
 			<div className='pt-8 container max-sm:px-8'>
 				<div className='sm:flex justify-center items-center gap-x-16 mt-10'>
 					<div className='flex sm:gap-x-16 max-sm:mb-2'>
-						<img src="/logos/wordpress.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
-						<img src="/logos/cpanel.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="https://i.imgur.com/IfGNB61.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="https://i.imgur.com/AMrRL7v.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
 					</div>
 
 					<div className='flex sm:gap-x-16 max-sm:mb-3 items-center'>
-						<img src="/logos/litespeed.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
-						<img src="/logos/gsuite.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="https://i.imgur.com/XkmbqVt.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+						<img src="https://i.imgur.com/jK9nBP7.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
 					</div>
 
 
-					<img src="/logos/cloudflare.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
+					<img src="https://i.imgur.com/mTK8J8D.png" alt="" className='w-40 select-none max-sm:mx-auto max-sm:mb-3 max-sm:w-24' />
 				</div>
 			</div>
 		</div>

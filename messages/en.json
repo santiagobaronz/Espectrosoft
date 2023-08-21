@@ -1,0 +1,36 @@
+{
+	"settings": {
+		"language": "English",
+		"lg": "en",
+		"main_alert": "Get a 10% discount with the code ESPECTROWEB on web development services"
+	},
+
+	"header": {
+		"services": "Services & pricing",
+		"contact": "Contact us",
+		"portfolio": "Portfolio",
+		"about": "About us",
+		"contact_us": "Contact us",
+		"start_project": "Start now with your project",
+		"start_project_description": "We are happy to help you with your request.",
+		"contact_sales": "Contact sales",
+		"customers": "Customers",
+		"menu": "Navigation"
+	},
+
+	"homePage": {
+		"category": "Trending Categories",
+		"web_design": "Web design",
+		"hosting": "Hosting",
+		"domains": "Domains",
+		"main_title_1": "Tailor-made",
+		"main_title_2": "web",
+		"main_title_3": "solutions: ",
+		"main_title_4": "Boost",
+		"main_title_5": "your success on the Internet",
+		"main_description": "The future of your business is on the web, and we are here to build it. We offer you personalized web solutions, based on cutting-edge technology and designed to fuel your growth and success.",
+		"view_portfolio": "See portfolio",
+		"contact_sales": "Contact sales",
+		"about_brands": "Empowering our work with the best technologies for an unparalleled experience."
+	}
+}

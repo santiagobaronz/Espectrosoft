@@ -11,26 +11,26 @@
 }
 
 .bg-header{
-	background-image: url('/assets/bg-header.png');
+	background-image: url('https://i.imgur.com/XrEQ6tf.png');
 	background-repeat: no-repeat;
 	background-size: 72%;
 	background-position: 100%;
 }
 
 .introduction{
-	background-image: url('/assets/introduction.jpg');
+	background-image: url('https://i.imgur.com/fnF7fBx.jpg');
 	background-size: cover;
 	background-position: 0;
 }
 
 .hosting{
-	background-image: url('/assets/hosting.jpg');
+	background-image: url('https://i.imgur.com/V2GcEWG.jpg');
 	background-size: cover;
 	background-position: 0;
 }
 
 .domains{
-	background-image: url('/assets/domains.jpg');
+	background-image: url('https://i.imgur.com/7eH2bl1.jpg');
 	background-size: cover;
 	background-position: 0;
 }

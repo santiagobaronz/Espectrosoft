@@ -1,0 +1,36 @@
+{
+	"settings": {
+		"language": "Español",
+		"lg": "es",
+		"main_alert": "Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web"
+	},
+
+	"header": {
+		"services": "Servicios y precios",
+		"contact": "Contactanos",
+		"portfolio": "Portafolio",
+		"about": "Nosotros",
+		"contact_us": "Cotizar ahora",
+		"start_project": "Comienza ahora con tu proyecto",
+		"start_project_description": "Estamos encantados de ayudarte en tu solicitud.",
+		"contact_sales": "Contactar con ventas",
+		"customers": "Clientes",
+		"menu": "Menú de navegación"
+	},
+
+	"homePage": {
+		"category": "Categorias en tendencia",
+		"web_design": "Diseño web",
+		"hosting": "Hosting",
+		"domains": "Dominios",
+		"main_title_1": "Soluciones",
+		"main_title_2": "web",
+		"main_title_3": "hechas a la medida:",
+		"main_title_4": "Impulsa",
+		"main_title_5": "tu éxito en internet",
+		"main_description": "El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo. Te ofrecemos soluciones web personalizadas, basadas en tecnología de vanguardia y diseñadas para impulsar tu crecimiento y éxito.",
+		"view_portfolio": "Ver portafolio",
+		"contact_sales": "Contactar con ventas",
+		"about_brands": "Potenciando nuestro trabajo con las mejores tecnologías para una experiencia inigualable."
+	}
+}

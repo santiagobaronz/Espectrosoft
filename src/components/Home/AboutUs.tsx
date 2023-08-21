@@ -22,7 +22,7 @@ export default function AboutUs() {
 			<div className="overflow-x-auto flex mt-20 gap-x-14 portfolio-home">
 				<div className="flex-none">
 					<div className="w-[450px] h-auto pb-10">
-						<img src="/assets/project1.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://i.imgur.com/YjnMEqR.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
@@ -37,7 +37,7 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="w-[450px] h-auto pb-10">
-						<img src="/assets/project2.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://i.imgur.com/M63CRTT.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
@@ -52,7 +52,7 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="w-[450px] h-auto pb-10">
-						<img src="/assets/project3.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://i.imgur.com/4oZdG8S.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
@@ -67,7 +67,7 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="w-[450px] h-auto pb-10">
-						<img src="/assets/project4.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://i.imgur.com/IlArnY5.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
