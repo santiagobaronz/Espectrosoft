@@ -4,7 +4,7 @@ import { GlobalContextProvider } from '@/src/context/translations'
 import '../src/styles/globals.css'
 import { MantineProvider } from '@mantine/core'
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Poppins, Inter } from 'next/font/google'
 import Header from '@/src/Navigation/Header'
 
 const pageFont = Poppins({
@@ -34,7 +34,7 @@ export default function RootLayout({ children, }: {
 			<body className={`${pageFont.className}`}>
 				<GlobalContextProvider>
 					<MantineProvider>
-						<div className='bg-[#f0f6ff]'>
+						<div>
 							<Header></Header>
 							{children}
 						</div>

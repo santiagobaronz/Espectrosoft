@@ -1,15 +1,18 @@
 'use client'
 
+import MainContent from '@/src/components/Home/MainContent'
 import Introduction from '@/src/components/Home/Introduction'
-import Services from '@/src/components/Home/Services'
 import React from 'react'
+import AboutUs from '@/src/components/Home/AboutUs'
 
 export default function HomePage() {
 
 	return (
-		<div className='pt-10'>
-			<Introduction></Introduction>
-			<Services></Services>
+		<div>
+			<div className='md:pt-10'>
+				<Introduction></Introduction>
+			</div>
+			<AboutUs></AboutUs>
 		</div>
 	)
 }

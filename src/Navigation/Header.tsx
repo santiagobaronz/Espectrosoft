@@ -40,9 +40,6 @@ const useStyles = createStyles((theme) => ({
 			width: '100%',
 		},
 
-		...theme.fn.hover({
-			backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-		}),
 	},
 
 	subLink: {
@@ -146,7 +143,7 @@ export default function Menu() {
 	}
 
 	return (
-		<Box className=''>
+		<Box className='border-header'>
 
 			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8'>
 				<div className='container flex text-sm text-white justify-center items-center gap-x-3'>
@@ -264,11 +261,11 @@ export default function Menu() {
 
 					<Group className={classes.hiddenMobile}>
 
-						<div className='border p-2 rounded-md opacity-40 cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
-							<RiTranslate2 className='text-xl'></RiTranslate2>
+						<div className='border-user w-11 flex justify-center items-center h-11 rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
+							<RiTranslate2 className='text-xl opacity-50'></RiTranslate2>
 						</div>
 
-						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded bg-light-blue text-white'>
+						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded border text-gray'>
 							<BsFillPersonFill></BsFillPersonFill>
 							<div className='font-medium'>
 								<Translation section='header' translationKey='customers' />
@@ -291,9 +288,8 @@ export default function Menu() {
 				</Group>
 			</Header>
 
-
-			{/*@ts-ignore*/}
-			<Drawer title={<Translation section='header' translationKey='menu' />}
+			<Drawer 
+				title={<Translation section='header' translationKey='menu' />}
 				opened={drawerOpened}
 				onClose={closeDrawer}
 				size="85%"
@@ -302,7 +298,7 @@ export default function Menu() {
 				zIndex={1000000}
 
 			>
-				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'} >
+				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'}>
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
 					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>

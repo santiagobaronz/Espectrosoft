@@ -7,19 +7,38 @@
 }
 
 .border-user{
-	border: 1px solid #55A2CA;
+	border: 1px solid #bebebe;
 }
 
-.border-technologies{
-	border-top:  1px solid rgba(206, 219, 237, 0.728);
-	margin: 40px auto 0 auto;
+.introduction{
+	background-image: url('/assets/introduction.jpg');
+	background-size: cover;
+	background-position: 0;
 }
 
-.main-content{
-	background-image: url('/borders/main.png');
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: -3vw;
-    padding: 120px 24px 40px;
+.hosting{
+	background-image: url('/assets/hosting.jpg');
+	background-size: cover;
+	background-position: 0;
+}
+
+.domains{
+	background-image: url('/assets/domains.jpg');
+	background-size: cover;
+	background-position: 0;
+}
+
+
+.portfolio-home::-webkit-scrollbar{
+    height: 6px;
+    background-color: transparent;
+}
+.portfolio-home::-webkit-scrollbar-track{
+    background-color: #ccc;
+	border-radius: 5px;
+}
+
+.portfolio-home::-webkit-scrollbar-thumb{
+    background-color: #252525;
+    border-radius: 5px;
 }

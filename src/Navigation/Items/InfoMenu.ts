@@ -1,4 +1,4 @@
-import { BsCart4, BsGlobe, BsServer, BsWindowPlus, BsWrench, } from "react-icons/bs";
+import { BsCart4, BsCodeSlash, BsGlobe, BsServer, BsWindowPlus, BsWrench, } from "react-icons/bs";
 
 export const infoMenu = {
 	'services': [
@@ -63,6 +63,19 @@ export const infoMenu = {
 			description: {
 				spanish: 'Actualizamos, optimizamos y arreglamos tu sitio web.',
 				english: 'We update, optimize and fix your website.',
+			},
+			url: '/desarrollo-web',
+			newTab: false
+		},
+		{
+			icon: BsCodeSlash,
+			title: {
+				spanish: 'Soluciones empresariales',
+				english: 'Enterprise Solutions',
+			},
+			description: {
+				spanish: 'Software especializado diseñado para impulsar tu negocio.',
+				english: 'Specialized software designed to boost your business.',
 			},
 			url: '/desarrollo-web',
 			newTab: false
