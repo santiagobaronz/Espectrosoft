@@ -49,3 +49,9 @@
     background-color: #252525;
     border-radius: 5px;
 }
+
+@media (max-width: 1000px) {
+    .bg-header {
+        background-image: none;
+    }
+}

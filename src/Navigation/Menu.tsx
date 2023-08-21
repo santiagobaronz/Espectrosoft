@@ -1,12 +1,11 @@
-'use client'
 
-import { useDisclosure } from '@mantine/hooks';
+
 import { useTranslations } from 'next-intl';
-import {useRouter} from 'next-intl/client';
+import { useRouter } from 'next-intl/client';
 
 import {
 	createStyles, Header, HoverCard, Group, UnstyledButton,
-	Text, SimpleGrid, ThemeIcon, Anchor, Divider, Center, Box, Burger,
+	Text, SimpleGrid, ThemeIcon, Divider, Center, Box, Burger,
 	Drawer, Collapse, ScrollArea, rem, Button,
 } from '@mantine/core';
 
@@ -76,11 +75,11 @@ const useStyles = createStyles((theme) => ({
 	},
 }));
 
+import { useDisclosure } from '@mantine/hooks';
 
-export default async function Menu() {
+export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-	const [isLoading, setIsLoading] = useState<Boolean>(false)
 	const tsSettings = useTranslations('settings')
 	const tsHeader = useTranslations('header')
 	const router = useRouter()
@@ -92,10 +91,10 @@ export default async function Menu() {
 
 
 	const handleLanguageSelection = () => {
-		if(tsSettings('lg') == 'es'){
-			router.push('/', {locale: 'en'});
-		}else{
-			router.push('/', {locale: 'es'});
+		if (tsSettings('lg') == 'es') {
+			router.push('/', { locale: 'en' });
+		} else {
+			router.push('/', { locale: 'es' });
 		}
 	};
 
@@ -136,15 +135,6 @@ export default async function Menu() {
 		))
 	}
 
-	if (isLoading) {
-		return (
-			<div className='container p-5 flex gap-x-5'>
-				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-				<div className='bg-gray w-3/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-			</div>
-		);
-	}
 
 	return (
 		<Box className='border-header'>
@@ -293,9 +283,9 @@ export default async function Menu() {
 			</Header>
 
 			<Drawer
-				title={'Titulo'}
+				title={tsHeader('menu')}
 				opened={drawerOpened}
-				onClose={closeDrawer}
+				onClose={toggleDrawer}
 				size="85%"
 				padding="40px"
 				className={classes.hiddenDesktop}
@@ -308,7 +298,7 @@ export default async function Menu() {
 					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
 						<Center inline>
 							<Box component="span" mr={5}>
-
+								{tsHeader('about')}
 							</Box>
 						</Center>
 					</UnstyledButton>
@@ -317,7 +307,7 @@ export default async function Menu() {
 					<UnstyledButton className={`${classes.link} mb-8 mt-5`} onClick={() => handleToggle('services')}>
 						<Center inline>
 							<Box component="span" mr={5}>
-
+								{tsHeader('services')}
 							</Box>
 							<FiChevronDown size={16} color={'#1B75B0'} />
 						</Center>
@@ -327,7 +317,7 @@ export default async function Menu() {
 					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
 						<Center inline>
 							<Box component="span" mr={5}>
-
+								{tsHeader('portfolio')}
 							</Box>
 						</Center>
 					</UnstyledButton>
@@ -335,23 +325,23 @@ export default async function Menu() {
 					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
 						<Center inline>
 							<Box component="span" mr={5}>
-
+								{tsHeader('contact')}
 							</Box>
 						</Center>
 					</UnstyledButton>
 
 					<Divider my="sm" color='#21232E43' />
 
-					<div className='mt-6'>
+					<div className='mt-6 md:flex gap-x-3'>
 						<Link href={'#'}>
 							<button className='bg-light-blue text-white px-5 py-[9px] rounded-md max-md:w-full max-md:mb-3'>
-
+								{tsHeader('customers')}
 							</button>
 						</Link>
 
 						<Link href={'#'}>
 							<button className='bg-dark-blue text-white px-5 py-[9px] rounded-md max-md:w-full max-md:mb-3'>
-
+								{tsHeader('contact_us')}
 							</button>
 						</Link>
 
@@ -359,7 +349,7 @@ export default async function Menu() {
 							<div onClick={handleLanguageSelection} className='border p-2 rounded-md opacity-40 cursor-pointer flex max-md:justify-center max-md:gap-x-5 items-center max-md:mb-3'>
 								<RiTranslate2 className='text-xl'></RiTranslate2>
 								<div className='md:hidden text-black'>
-
+									{tsHeader('translate')}
 								</div>
 							</div>
 						</div>
@@ -367,6 +357,8 @@ export default async function Menu() {
 
 				</ScrollArea>
 			</Drawer>
+
+
 		</Box>
 	);
 }
