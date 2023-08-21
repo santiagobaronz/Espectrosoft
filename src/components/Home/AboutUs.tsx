@@ -1,20 +1,23 @@
-import Translation from '@/src/translation/Translation'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRight, BsCodeSlash, BsFillLightningFill, BsGlobe, BsServer, BsWindowPlus, BsWrench } from 'react-icons/bs'
 
 export default function AboutUs() {
+
+	const tsHomepage = useTranslations('homePage')
+
 	return (
 		<div className='container'>
 			<div className='flex items-center mt-28'>
 				<div className='w-3/6'>
-					<p className='text-sm mb-5 text-gray-200 font-medium'>OUR WORK</p>
-					<h3 className='text- text-4xl font-bold'>We help businesses to make their product come to life, worldwide.</h3>
+					<p className='text-sm mb-5 text-gray-200 font-medium'>{tsHomepage('our_work')}</p>
+					<h3 className='text- text-4xl font-bold'>{tsHomepage('work_title')}</h3>
 				</div>
 				<div className='w-3/6 text-gray-200 flex justify-end'>
 					<div className='w-2/3'>
-						<p className='mb-8'>Our experience has helped our clients launch new companies in the digital arena throughtout the years. Take a look at some of our greatest work.</p>
-						<Link href={'#'} className='text-blue font-semibold bg-blue-bg px-10 py-3 rounded-full'>See all works</Link>
+						<p className='mb-8'>{tsHomepage('work_description')}</p>
+						<Link href={'#'} className='text-blue font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
 					</div>
 				</div>
 			</div>

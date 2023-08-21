@@ -1,4 +1,3 @@
-import Translation from '@/src/translation/Translation'
 import React from 'react'
 import { BsCodeSlash, BsFillLightningFill, BsGlobe, BsServer, BsWindowPlus, BsWrench } from 'react-icons/bs'
 
@@ -23,7 +22,7 @@ export default function MainContent() {
 							</div>
 						</div>
 						<div className='w-5/6'>
-							<h3 className='font-medium'><Translation section='header' translationKey='contact_us' /></h3>
+							<h3 className='font-medium'></h3>
 							<p className='text-sm'>Sitios web personalizados para tu negocio o marca.</p>
 						</div>
 					</div>

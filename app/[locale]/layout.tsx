@@ -1,14 +1,12 @@
 'use client'
 
 import '../../src/styles/globals.css'
-import { Poppins, Inter } from 'next/font/google'
+import { Poppins} from 'next/font/google'
 
 import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
-import { notFound } from 'next/navigation';
-import { constants } from 'buffer';
-import Menu from '@/src/Navigation/Menu';
 import { MantineProvider } from '@mantine/core';
+import Menu from '../../src/Navigation/Menu';
 
 const pageFont = Poppins({
 	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
@@ -39,7 +37,21 @@ export default async function LocaleLayout({
 	const messages = await getMessages(locale);
 
 	return (
-		<html className="h-full" lang={locale}>
+		<html lang={locale}>
+			<head>
+				<title>Espectrosoft | Desarrollo web profesional</title>
+				<meta name="author" content="Espectrosoft" />
+				<meta name="description" content="Destaca en línea con nuestro servicio de desarrollo de sitios web profesionales y personalizados. Diseños a medida que se adaptan a tu negocio a precios inigualables." />
+				<link rel="icon" href="https://i.imgur.com/ZIyZSrF.png" sizes="any" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta name="keywords" content="Desarrollo de sitios web personalizados, Diseño web profesional, Servicio de diseño web a medida, Espectrosoft, Precios competitivos, Paginas web, Agencia web, Ecuador, Web Ecuador, Desarrollo web ecuador" />
+				<meta name="robots" content="index, follow" />
+				<meta httpEquiv="Content-Language" content="es" />
+				<meta name="geo.region" content="EC" />
+				<meta name="geo.placename" content="Ecuador" />
+				<meta name="geo.position" content="-0.2295;-78.5249" />
+				<meta name="ICBM" content="-0.2295, -78.5249" />
+			</head>
 			<body className={`${pageFont.className}`}>
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					<MantineProvider>

@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link';
-import Translation from '@/src/translation/Translation';
 import { BsArrowRight } from 'react-icons/bs';
+import { useTranslations } from 'next-intl';
 
 export default function Introduction() {
+
+	const tsHomepage = useTranslations('homePage')
 
 	return (
 
@@ -11,12 +13,12 @@ export default function Introduction() {
 			<div className='flex gap-x-8'>
 				<div className='introduction w-4/6 p-14 h-[600px] rounded-3xl shadow-xl hover:shadow-2xl flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 					<div className='text-white w-4/6'>
-						<p className='text-sm text-[#ccc]'>SOFTWARE DEVELOPMENT SERVICES</p>
-						<h2 className='text-3xl font-semibold mt-3'>We are a Website & Software development agency</h2>
+						<p className='text-sm text-[#ccc]'>{tsHomepage('software_card_category')}</p>
+						<h2 className='text-3xl font-semibold mt-3'>{tsHomepage('software_card_title')}</h2>
 					</div>
 					<div className='w-2/6 flex justify-center mb-5'>
 						<div className=' bg-white px-12 cursor-pointer py-3 rounded-full text-blue font-medium flex items-center gap-x-2'>
-							<Link href={'#'} className=''>Cotizar</Link>
+							<Link href={'#'} className=''>{tsHomepage('project_estimation')}</Link>
 							<BsArrowRight></BsArrowRight>
 						</div>
 					</div>
@@ -24,14 +26,14 @@ export default function Introduction() {
 				<div className='w-2/6'>
 					<Link href={'#'} className='h-[285px] p-8 mb-7 shadow-xl hover:shadow-2xl rounded-3xl hosting flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 						<div className='text-white w-2/3'>
-							<p className='text-[13px] text-[#ccc]'>CLOUD HOSTING SERVICES</p>
-							<h2 className='text-xl font-semibold mt-2'>Host your project in the cloud with us</h2>
+							<p className='text-[13px] text-[#ccc]'>{tsHomepage('hosting_card_category')}</p>
+							<h2 className='text-xl font-semibold mt-2'>{tsHomepage('hosting_card_title')}</h2>
 						</div>
 					</Link>
 					<Link href={'#'} className='h-[285px] p-8 mb-7 shadow-xl hover:shadow-2xl rounded-3xl domains flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 						<div className='text-white w-2/3'>
-							<p className='text-[13px] text-[#ccc]'>DOMAIN REGISTRATION SERVICES</p>
-							<h2 className='text-xl font-semibold mt-2'>Professional domains for your online success</h2>
+							<p className='text-[13px] text-[#ccc]'>{tsHomepage('domains_card_category')}</p>
+							<h2 className='text-xl font-semibold mt-2'>{tsHomepage('domains_card_title')}</h2>
 						</div>
 					</Link>
 				</div>

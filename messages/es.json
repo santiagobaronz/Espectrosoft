@@ -4,7 +4,6 @@
 		"lg": "es",
 		"main_alert": "Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web"
 	},
-
 	"header": {
 		"services": "Servicios y precios",
 		"contact": "Contactanos",
@@ -17,20 +16,25 @@
 		"customers": "Clientes",
 		"menu": "Menú de navegación"
 	},
-
 	"homePage": {
-		"category": "Categorias en tendencia",
-		"web_design": "Diseño web",
-		"hosting": "Hosting",
-		"domains": "Dominios",
-		"main_title_1": "Soluciones",
-		"main_title_2": "web",
-		"main_title_3": "hechas a la medida:",
-		"main_title_4": "Impulsa",
-		"main_title_5": "tu éxito en internet",
-		"main_description": "El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo. Te ofrecemos soluciones web personalizadas, basadas en tecnología de vanguardia y diseñadas para impulsar tu crecimiento y éxito.",
-		"view_portfolio": "Ver portafolio",
-		"contact_sales": "Contactar con ventas",
-		"about_brands": "Potenciando nuestro trabajo con las mejores tecnologías para una experiencia inigualable."
+		"pre_title": "Preparados para nuevos proyectos",
+		"title_s1": "Soluciones",
+		"title_s2": "Web",
+		"title_s3": "que impulsan tu éxito en ",
+		"title_s4": "internet",
+		"description": "El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo. Te ofrecemos soluciones web personalizadas, basadas en tecnología de vanguardia y diseñadas para impulsar tu crecimiento y éxito.",
+		"join_community": "Únete a la comunidad de clientes",
+		"contact_sales": "Hablar con un especialista",
+		"software_card_category": "SERVICIOS DE DESARROLLO DE SOFTWARE",
+		"software_card_title": "Somos desarrolladores de sitios web y de software",
+		"project_estimation": "Cotizar",
+		"hosting_card_category": "SERVICIOS DE HOSPEDAJE EN LA NUBE",
+		"hosting_card_title": "Hospeda tu proyecto en la nube con nosotros",
+		"domains_card_category": "SERVICIOS DE REGISTRO DE DOMINIOS",
+		"domains_card_title": "Dominios profesionales para tu éxito en línea",
+		"our_work": "NUESTRO TRABAJO",
+		"work_title": "Ayudamos a las empresas a dar vida a sus productos en todo el mundo.",
+		"work_description": "Nuestra experiencia ha ayudado a nuestros clientes a lanzar nuevas empresas en el ámbito digital a lo largo de los años. Echa un vistazo a algunos de nuestros mejores trabajos.",
+		"work_button": "Ver todos los trabajos"
 	}
 }
