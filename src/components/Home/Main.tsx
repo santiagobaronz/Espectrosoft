@@ -9,7 +9,7 @@ export default function Main() {
 
 	return (
 		<div>
-			<div className='container bg-header w-full py-24 flex items-center'>
+			<div className='container bg-header w-full md:py-24 pt-16 pb-20 flex items-center'>
 				<div className='xl:w-2/4 max-lg:w-full'>
 
 					<div className='bg-blue-bg px-8 py-2 rounded-full text-sm text-gray-200 flex items-center gap-x-2 w-fit'>
