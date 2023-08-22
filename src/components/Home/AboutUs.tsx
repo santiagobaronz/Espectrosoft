@@ -14,6 +14,7 @@ export default function AboutUs() {
 					<p className='text-sm mb-5 text-gray-200 font-medium'>{tsHomepage('our_work')}</p>
 					<h3 className='text- text-4xl font-bold'>{tsHomepage('work_title')}</h3>
 					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5'>{tsHomepage('work_description')}</p>
+					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
 				</div>
 				<div className='lg:w-3/6 text-gray-200 flex justify-center max-xl:hidden'>
 						<img src="https://imgur.com/G1Mxvq1.png" className='w-[450px] opacity-40'  />
