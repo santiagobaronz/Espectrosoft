@@ -19,7 +19,7 @@ export default function Introduction() {
 							<h2 className='md:text-3xl text-2xl font-semibold mt-3'>{tsHomepage('software_card_title')}</h2>
 						</div>
 						<div className='md:w-2/6 flex md:justify-center max-xl:mt-5'>
-							<div className=' bg-white px-12 cursor-pointer h-14 rounded-full max-xl:rounded-lg text-blue font-medium flex items-center gap-x-2'>
+							<div className=' bg-white md:px-12 px-6 cursor-pointer h-14 rounded-full max-xl:rounded-lg text-blue font-medium flex items-center gap-x-2'>
 								<Link href={'#'} className=''>{tsHomepage('project_estimation')}</Link>
 								<BsArrowRight></BsArrowRight>
 							</div>
