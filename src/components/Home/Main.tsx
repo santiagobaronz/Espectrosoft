@@ -31,11 +31,8 @@ export default function Main() {
 							</div>
 							<p className='text-sm text-gray mt-2 max-md:mb-10'>{tsHomepage('join_community')}</p>
 						</div>
-
 						<Link href={'#'} className='px-10 py-4 rounded-full bg-blue text-white font-medium'>{tsHomepage('contact_sales')}</Link>
 					</div>
-
-
 				</div>
 			</div>
 		</div>

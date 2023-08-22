@@ -25,11 +25,11 @@ export default function AboutUs() {
 			<div className="overflow-x-auto flex mt-20 gap-x-14 portfolio-home">
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://i.imgur.com/YjnMEqR.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://imgur.com/s3l9j1l.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
-								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
-								<p>Website development</p>
+								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
+								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -40,11 +40,11 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://i.imgur.com/M63CRTT.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://i.imgur.com/1DoPKLC.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
-								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
-								<p>Website development</p>
+								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Latin American Aeronautics | Aviación</h4>
+								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -55,11 +55,11 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://i.imgur.com/4oZdG8S.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://imgur.com/jfv8l3j.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
-								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
-								<p>Website development</p>
+							<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>IVAO Ecuador | Simuladores Virtuales</h4>
+								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -72,9 +72,9 @@ export default function AboutUs() {
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://i.imgur.com/IlArnY5.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
-							<div>
-								<h4 className='text-xl font-semibold'>Bloomey, housplants store</h4>
-								<p>Website development</p>
+							<div className='w-11/12 whitespace-nowrap text-ellipsis overflow-hidden'>
+							<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
+								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -82,7 +82,7 @@ export default function AboutUs() {
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	)
