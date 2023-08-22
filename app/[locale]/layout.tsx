@@ -52,7 +52,7 @@ export default async function LocaleLayout({
 				<meta name="geo.position" content="-0.2295;-78.5249" />
 				<meta name="ICBM" content="-0.2295, -78.5249" />
 			</head>
-			<body className={`${pageFont.className}`}>
+			<body className={`${pageFont.className}` }>
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					<MantineProvider>
 						<Menu></Menu>

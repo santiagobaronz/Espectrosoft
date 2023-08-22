@@ -46,19 +46,19 @@ export default function Introduction() {
 				</div>
 			</div>
 
-			<div className='pt-8 container max-sm:px-8 flex justify-center'>
+			<div className='sm:pt-8 container max-sm:px-8 flex justify-center'>
 				<div className='lg:flex justify-center items-center gap-x-16 mt-10'>
-					<div className='flex sm:gap-x-16 max-sm:mb-2'>
-						<img src="https://i.imgur.com/IfGNB61.png" alt="" className='lg:w-40 md:w-56 sm:w-44 max-lg:mb-10 select-none' />
-						<img src="https://i.imgur.com/AMrRL7v.png" alt="" className='lg:w-40 md:w-56 sm:w-44 max-lg:mb-10 select-none' />
+					<div className='sm:flex sm:gap-x-16 max-sm:mb-2 max-sm:gap-x-10'>
+						<img src="https://i.imgur.com/IfGNB61.png" alt="" className='lg:w-40 md:w-56 max-md:w-44 max-sm:w-32 max-lg:mb-10 select-none' />
+						<img src="https://i.imgur.com/AMrRL7v.png" alt="" className='lg:w-40 md:w-56 max-md:w-44 max-sm:w-32 max-lg:mb-10 select-none' />
 					</div>
 
-					<div className='flex sm:gap-x-16 max-sm:mb-3 items-center'>
-						<img src="https://i.imgur.com/XkmbqVt.png" alt="" className='lg:w-40 md:w-56 sm:w-44 max-lg:mb-10 select-none' />
-						<img src="https://i.imgur.com/jK9nBP7.png" alt="" className='lg:w-40 md:w-56 sm:w-44 max-lg:mb-10 select-none' />
+					<div className='sm:flex sm:gap-x-16 max-sm:mb-3 items-center max-sm:gap-x-10'>
+						<img src="https://i.imgur.com/XkmbqVt.png" alt="" className='lg:w-40 md:w-56 max-md:w-44 max-sm:w-32 max-lg:mb-10 select-none' />
+						<img src="https://i.imgur.com/jK9nBP7.png" alt="" className='lg:w-40 md:w-56 max-md:w-44 max-sm:w-32 max-lg:mb-10 select-none' />
 					</div>
 
-					<img src="https://i.imgur.com/mTK8J8D.png" alt="" className='lg:w-40 md:w-56 sm:w-44 select-none mx-auto' />
+					<img src="https://i.imgur.com/mTK8J8D.png" alt="" className='lg:w-40 md:w-56 max-md:w-44 max-sm:w-32 select-none mx-auto' />
 				</div>
 			</div>
 		</div>

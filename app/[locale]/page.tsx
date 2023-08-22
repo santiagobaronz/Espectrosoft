@@ -8,7 +8,7 @@ import AboutUs from '../../src/components/Home/AboutUs'
 export default async function HomePage() {
 
 	return (
-		<div>
+		<div className='max-lg:px-10'>
 			<Main></Main>
 			<Introduction></Introduction>
 			<AboutUs></AboutUs>
