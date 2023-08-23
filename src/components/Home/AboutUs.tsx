@@ -17,7 +17,7 @@ export default function AboutUs() {
 					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
 				</div>
 				<div className='lg:w-3/6 text-gray-200 flex justify-center max-xl:hidden'>
-						<img src="https://imgur.com/G1Mxvq1.png" className='w-[450px] opacity-40'  />
+						<img src="https://imgur.com/G1Mxvq1.png" className='w-[450px] opacity-10'  />
 				</div>
 			</div>
 
