@@ -8,7 +8,7 @@ export default function Main() {
 	const tsHomepage = useTranslations('homePage')
 
 	return (
-		<div>
+		<div className='max-lg:px-10'>
 			<div className='container bg-header w-full md:py-24 pt-16 pb-20 flex items-center'>
 				<div className='xl:w-2/4 max-lg:w-full'>
 

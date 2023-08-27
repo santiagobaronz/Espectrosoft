@@ -8,20 +8,17 @@ export default function AboutUs() {
 	const tsHomepage = useTranslations('homePage')
 
 	return (
-		<div className='container'>
-			<div className='lg:flex items-center mt-28'>
-				<div className='xl:w-3/6'>
+		<div className='container max-lg:px-10'>
+			<div className='lg:flex items-center mt-28 justify-center'>
+				<div className='xl:w-3/6 lg:text-center'>
 					<p className='text-sm mb-5 text-gray-200 font-medium'>{tsHomepage('our_work')}</p>
 					<h3 className='text- text-4xl font-bold'>{tsHomepage('work_title')}</h3>
 					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5'>{tsHomepage('work_description')}</p>
 					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
 				</div>
-				<div className='lg:w-3/6 text-gray-200 flex justify-center max-xl:hidden'>
-						<img src="https://imgur.com/G1Mxvq1.png" className='w-[450px] opacity-10'  />
-				</div>
 			</div>
 
-			<div className="overflow-x-auto flex mt-10 gap-x-14 portfolio-home">
+			<div className="overflow-x-auto flex lg:mt-10 mt-16 gap-x-14 portfolio-home">
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://imgur.com/s3l9j1l.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />

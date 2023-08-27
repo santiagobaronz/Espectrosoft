@@ -9,7 +9,7 @@ import Services from '../../src/components/Home/Services'
 export default async function HomePage() {
 
 	return (
-		<div className='max-lg:px-10'>
+		<div>
 			<Main></Main>
 			<Introduction></Introduction>
 			<AboutUs></AboutUs>

@@ -9,7 +9,7 @@ export default function Introduction() {
 
 	return (
 
-		<div className='container'>
+		<div className='container max-lg:px-10'>
 			<div className='lg:flex gap-x-8'>
 
 				<div className='introduction w-4/6 max-lg:w-full max-lg:mb-10 md:p-14 p-8 md:h-[600px] h-[500px] rounded-3xl shadow-xl hover:shadow-2xl flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
