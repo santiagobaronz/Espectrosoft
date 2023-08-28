@@ -21,7 +21,7 @@ export default function AboutUs() {
 			<div className="overflow-x-auto flex lg:mt-10 mt-16 gap-x-14 portfolio-home">
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://imgur.com/s3l9j1l.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://imgur.com/2oKy1aR.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
@@ -36,7 +36,7 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://i.imgur.com/1DoPKLC.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://imgur.com/BjPbvZR.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Latin American Aeronautics | Aviación</h4>
@@ -51,7 +51,7 @@ export default function AboutUs() {
 
 				<div className="flex-none">
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
-						<img src="https://imgur.com/jfv8l3j.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
+						<img src="https://imgur.com/BsOIkEO.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
 							<div>
 							<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>IVAO Ecuador | Simuladores Virtuales</h4>
