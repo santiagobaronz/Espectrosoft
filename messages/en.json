@@ -50,6 +50,10 @@
 		"aboutUs_card_1": "Operated Years",
 		"aboutUs_card_2": "Happy Clients",
 		"aboutUs_card_3": "Professionals",
-		"aboutUs_card_4": "Amazing Project"
+		"aboutUs_card_4": "Amazing Project",
+
+		"testimonials": "TESTIMONIALS",
+		"testimonials_title": "Reviews from our clients",
+		"testimonials_description": "Discover what our satisfied customers have to say. Testimonials are the voices of those who have experienced our services firsthand."
 	}
 }

@@ -50,6 +50,10 @@
 		"aboutUs_card_1": "Años en Operación",
 		"aboutUs_card_2": "Clientes Satisfechos",
 		"aboutUs_card_3": "Profesionales",
-		"aboutUs_card_4": "Proyectos Asombrosos"
+		"aboutUs_card_4": "Proyectos Asombrosos",
+
+		"testimonials": "TESTIMONIOS",
+		"testimonials_title": "Opiniones de nuestros clientes",
+		"testimonials_description": "Descubre lo que nuestros clientes satisfechos tienen que decir. Los testimonios son la voz de quienes han experimentado nuestros servicios de primera mano."
 	}
 }

@@ -255,22 +255,20 @@ export default function Menu() {
 
 					<Group className={classes.hiddenMobile}>
 
-						<div className='border-user w-11 flex justify-center items-center h-11 rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
+						<div className='border-user w-11 h-11 flex justify-center items-center  rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
 							<RiTranslate2 className='text-xl opacity-50'></RiTranslate2>
 						</div>
 
-						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded border text-gray'>
-							<BsFillPersonFill></BsFillPersonFill>
+						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded-md border text-gray'>
 							<div className='font-medium'>
 								{tsHeader('customers')}
 							</div>
 						</Link>
 
-						<Link href={'#'} className='bg-dark-blue px-5 py-2 rounded'>
+						<Link href={'#'} className='bg-dark-blue px-7 py-2 rounded-md'>
 							<div className='text-white font-medium my-[1px]'>
 								<div className='flex justify-center items-center'>
 									{tsHeader('contact_us')}
-									<BsArrowRight className='text-lg ml-2'></BsArrowRight>
 								</div>
 
 							</div>

@@ -6,6 +6,7 @@ import Introduction from '../../src/components/Home/Introduction'
 import OurWork from '../../src/components/Home/OurWork'
 import AboutUs from '../../src/components/Home/AboutUs'
 import Services from '../../src/components/Home/Services'
+import Testimonials from '../../src/components/Home/Testimonials'
 
 export default async function HomePage() {
 
@@ -16,6 +17,7 @@ export default async function HomePage() {
 			<OurWork></OurWork>
 			<Services></Services>
 			<AboutUs></AboutUs>
+			<Testimonials></Testimonials>
 		</div>
 	)
 }
