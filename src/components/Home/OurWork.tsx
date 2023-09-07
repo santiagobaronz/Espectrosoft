@@ -23,8 +23,8 @@ export default function OurWork() {
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://imgur.com/2oKy1aR.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
-							<div>
-								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
+							<div className='w-9/12'>
+								<h4 className='text-xl font-semibold whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
 								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
@@ -38,8 +38,8 @@ export default function OurWork() {
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://imgur.com/BjPbvZR.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
-							<div>
-								<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Latin American Aeronautics | Aviación</h4>
+							<div className='w-9/12'>
+								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>Latin American Aeronautics | Aviación</h4>
 								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
@@ -53,8 +53,8 @@ export default function OurWork() {
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://imgur.com/BsOIkEO.png" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
-							<div>
-							<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>IVAO Ecuador | Simuladores Virtuales</h4>
+							<div className='w-9/12'>
+								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>IVAO Ecuador | Simulación Área</h4>
 								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
@@ -68,8 +68,8 @@ export default function OurWork() {
 					<div className="md:w-[450px] w-[400px] h-auto pb-10">
 						<img src="https://i.imgur.com/IlArnY5.jpg" alt="Imagen 1" className="w-full h-[350px] rounded-3xl object-cover" />
 						<div className='flex items-center justify-between mt-6'>
-							<div className='w-11/12 whitespace-nowrap text-ellipsis overflow-hidden'>
-							<h4 className='text-xl font-semibold w-10/12 whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
+							<div className='w-9/12'>
+								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>Servicesmile | Consultorio odontologico</h4>
 								<p>{tsHomepage('work_card_description')}</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
@@ -78,7 +78,6 @@ export default function OurWork() {
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	)
