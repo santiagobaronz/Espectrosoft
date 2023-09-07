@@ -54,6 +54,10 @@
 
 		"testimonials": "TESTIMONIALS",
 		"testimonials_title": "Reviews from our clients",
-		"testimonials_description": "Discover what our satisfied customers have to say. Testimonials are the voices of those who have experienced our services firsthand."
+		"testimonials_description": "Discover what our satisfied customers have to say. Testimonials are the voices of those who have experienced our services firsthand.",
+
+		"callToAction_title": "Strengthen your online presence with us",
+		"callToAction_description": "Our team of web and software development experts is ready to turn your vision into reality. Discover how we can help you stand out online.",
+		"callToAction_button": "Let's get started now!"
 	}
 }

@@ -54,6 +54,10 @@
 
 		"testimonials": "TESTIMONIOS",
 		"testimonials_title": "Opiniones de nuestros clientes",
-		"testimonials_description": "Descubre lo que nuestros clientes satisfechos tienen que decir. Los testimonios son la voz de quienes han experimentado nuestros servicios de primera mano."
+		"testimonials_description": "Descubre lo que nuestros clientes satisfechos tienen que decir. Los testimonios son la voz de quienes han experimentado nuestros servicios de primera mano.",
+
+		"callToAction_title": "Potencia tu presencia en internet con nosotros",
+		"callToAction_description": "Nuestro equipo de expertos en desarrollo web y software está listo para convertir tu visión en realidad. Descubre cómo podemos ayudarte a destacar en línea.",
+		"callToAction_button": "¡Empecemos ahora!"
 	}
 }
