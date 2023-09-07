@@ -33,10 +33,20 @@
 		"hosting_card_title": "Hospeda tu proyecto en la nube con nosotros",
 		"domains_card_category": "SERVICIOS DE REGISTRO DE DOMINIOS",
 		"domains_card_title": "Dominios profesionales para tu éxito en línea",
+		
 		"our_work": "NUESTRO TRABAJO",
 		"work_title": "Ayudamos a las empresas a dar vida a sus productos en todo el mundo.",
 		"work_description": "Nuestra experiencia ha ayudado a nuestros clientes a lanzar nuevas empresas en el ámbito digital a lo largo de los años. Echa un vistazo a algunos de nuestros mejores trabajos.",
 		"work_button": "Ver todos los trabajos",
-		"work_card_description": "Diseño y desarrollo web"
+		"work_card_description": "Diseño y desarrollo web",
+
+		"aboutUs": "SOBRE NOSOTROS",
+		"aboutUs_title": "El equipo convertirá tus ideas en realidad",
+		"aboutUs_description": "Sentimos que en esta era digital, la conexión es necesaria para desarrollar un imperio corporativo exitoso. Tener sitios web o aplicaciones móviles centrados en el usuario que sean fáciles de usar puede aumentar tu competitividad en el mercado.",
+		"aboutUs_button": "Más sobre nosotros",
+		"aboutUs_card_1": "Años en Operación",
+		"aboutUs_card_2": "Clientes Satisfechos",
+		"aboutUs_card_3": "Profesionales",
+		"aboutUs_card_4": "Proyectos Asombrosos"
 	}
 }
