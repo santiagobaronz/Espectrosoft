@@ -9,11 +9,11 @@ export default function OurWork() {
 
 	return (
 		<div className='container max-lg:px-10'>
-			<div className='lg:flex items-center mt-28 justify-center'>
-				<div className='xl:w-3/6 lg:text-center'>
+			<div className='lg:flex items-center mt-20 justify-center'>
+				<div className='xl:w-4/6 lg:text-center'>
 					<p className='text-sm mb-5 text-gray-200 font-medium'>{tsHomepage('our_work')}</p>
-					<h3 className='text- text-4xl font-bold'>{tsHomepage('work_title')}</h3>
-					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5'>{tsHomepage('work_description')}</p>
+					<h3 className='text-4xl font-bold'>{tsHomepage('work_title')}</h3>
+					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5 text-lg'>{tsHomepage('work_description')}</p>
 					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
 				</div>
 			</div>
