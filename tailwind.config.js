@@ -28,6 +28,7 @@ module.exports = {
 			// Logo
 
 			'dark-blue': '#1B75B0',
+			'cta': '#1D2939',
 			'light-blue': '#55A2CA',
 			'blue-bg': '#EBEFFF',
 
