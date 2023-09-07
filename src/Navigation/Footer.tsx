@@ -6,7 +6,7 @@ export default function Footer() {
 	const tsHomepage = useTranslations('footer')
 
 	return (
-		<footer className="bg-white mt-10" aria-labelledby="footer-heading">
+		<footer className="bg-white mt-10 max-md:mx-8" aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">{tsHomepage('description')}</h2>
 			<div className="container max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
