@@ -36,7 +36,7 @@ export default function AboutUs() {
 
 				</div>
 				<div className='w-1/2'>
-					<img src="https://imgur.com/rARBkva.jpg" alt="" className='h-full max-lg:hidden rounded-2xl object-cover ' />
+					<img src="https://imgur.com/KJA2DdJ.jpg" alt="" className='h-full max-lg:hidden rounded-2xl object-cover ' />
 				</div>
 			</div>
 		</div>
