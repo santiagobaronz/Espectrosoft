@@ -4,7 +4,7 @@ export default function CallToAction() {
 	return (
 		<div className="container max-w-7xl mt-20 ">
 			<div className="overflow-hidden xl:rounded-2xl bg-cta shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
-				<div className="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+				<div className="px-12 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
 					<div className="lg:self-center">
 						<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
 							<span className="block">Potencia tu presencia en línea con nosotros</span>
