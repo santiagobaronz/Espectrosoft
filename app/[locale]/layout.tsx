@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 import { MantineProvider } from '@mantine/core';
 import Menu from '../../src/Navigation/Menu';
+import Footer from '../../src/Navigation/Footer';
 
 const pageFont = Poppins({
 	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
@@ -57,6 +58,7 @@ export default async function LocaleLayout({
 					<MantineProvider>
 						<Menu></Menu>
 						{children}
+						<Footer></Footer>
 					</MantineProvider>
 				</NextIntlClientProvider>
 			</body>

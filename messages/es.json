@@ -17,6 +17,16 @@
 		"translate": "Traducir",
 		"menu": "Menú de navegación"
 	},
+
+	"footer":{
+		"description":"El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo.",
+		"solutions": "Soluciones",
+		"support": "Soporte",
+		"resources": "Recursos",
+		"legal": "Legal"
+	},
+
+
 	"homePage": {
 		"pre_title": "Preparados para nuevos proyectos",
 		"title_s1": "Soluciones",

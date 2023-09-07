@@ -17,6 +17,15 @@
 		"translate": "Translate",
 		"menu": "Navigation"
 	},
+
+	"footer":{
+		"description": "The future of your business is on the web, and we're here to build it.",
+		"solutions": "Solutions",
+		"support": "Support",
+		"resources": "Resources",
+		"legal": "Legal"
+	},
+
 	"homePage": {
 		"pre_title": "We are ready for new projects",
 		"title_s1": "Web",
