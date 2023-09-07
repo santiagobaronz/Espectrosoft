@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 import { FiChevronDown, FiLoader, FiX } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { infoMenu } from './Items/InfoMenu';
 import { BsArrowRight, BsArrowRightShort, BsBell, BsFillPersonFill } from 'react-icons/bs';
 
@@ -80,6 +80,7 @@ import { useDisclosure } from '@mantine/hooks';
 export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+	const [isLoading, setIsLoading] = useState<Boolean>(true)
 	const tsSettings = useTranslations('settings')
 	const tsHeader = useTranslations('header')
 	const router = useRouter()
@@ -89,6 +90,12 @@ export default function Menu() {
 		services: false,
 	});
 
+	useEffect(() => {
+		setTimeout(() => {
+			setIsLoading(false)
+		}, 150)
+
+	}, []);
 
 	const handleLanguageSelection = () => {
 		if (tsSettings('lg') == 'es') {
@@ -133,6 +140,16 @@ export default function Menu() {
 				</UnstyledButton>
 			</Link>
 		))
+	}
+
+	if (isLoading) {
+		return (
+			<div className='container p-5 flex gap-x-5'>
+				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
+				<div className='bg-gray w-3/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
+				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
+			</div>
+		);
 	}
 
 
