@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -74,7 +75,7 @@ export default function Footer() {
 								<h3 className="text-base font-medium text-gray-900">{tsHomepage('legal')}</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									<li>
-										<a href="/privacy" className="text-base text-gray-500 hover:text-gray-900">Privacy policy</a>
+										<Link href="/privacy-policy" className="text-base text-gray-500 hover:text-gray-900">Privacy policy</Link>
 									</li>
 									<li>
 										<a href="/terms" className="text-base text-gray-500 hover:text-gray-900">Terms of Service</a>
