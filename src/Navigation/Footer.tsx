@@ -8,7 +8,7 @@ export default function Footer() {
 	return (
 		<footer className="bg-white mt-10 max-md:mx-8" aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">{tsHomepage('description')}</h2>
-			<div className="container max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+			<div className="container max-w-7xl py-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
 					<div className="space-y-4 xl:col-span-1">
 						<img className="h-auto w-[194px] -ml-3" src="https://imgur.com/YiRVCbI.png" alt="Logo de Espectrosoft" />

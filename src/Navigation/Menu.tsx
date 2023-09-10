@@ -15,7 +15,7 @@ import { FiChevronDown, FiLoader, FiX } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
 import { useEffect, useState } from 'react';
 import { infoMenu } from './Items/InfoMenu';
-import { BsArrowRight, BsArrowRightShort, BsBell, BsFillPersonFill } from 'react-icons/bs';
+import { BsArrowRightShort, BsBell } from 'react-icons/bs';
 
 
 
