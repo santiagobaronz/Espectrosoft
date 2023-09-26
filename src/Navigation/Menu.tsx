@@ -1,101 +1,31 @@
-
-
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next-intl/client';
 
 import {
-	createStyles, Header, HoverCard, Group, UnstyledButton,
-	Text, SimpleGrid, ThemeIcon, Divider, Center, Box, Burger,
-	Drawer, Collapse, ScrollArea, rem, Button,
+	HoverCard, Group, Button, UnstyledButton, Text,
+	SimpleGrid, ThemeIcon, Anchor, Divider, Center, Box,
+	Burger, Drawer, Collapse, ScrollArea, rem, useMantineTheme,
 } from '@mantine/core';
 
 import Link from 'next/link';
-
 import { FiChevronDown, FiLoader, FiX } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
 import { useEffect, useState } from 'react';
 import { infoMenu } from './Items/InfoMenu';
 import { BsArrowRightShort, BsBell } from 'react-icons/bs';
-
-
-
-const useStyles = createStyles((theme) => ({
-	link: {
-		display: 'flex',
-		alignItems: 'center',
-		height: '100%',
-		paddingLeft: theme.spacing.md,
-		paddingRight: theme.spacing.md,
-		textDecoration: 'none',
-		color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-		fontWeight: 500,
-		fontSize: '15.5px',
-
-		[theme.fn.smallerThan('sm')]: {
-			height: rem(42),
-			display: 'flex',
-			alignItems: 'center',
-			width: '100%',
-		},
-
-	},
-
-	subLink: {
-		width: '100%',
-		padding: `${theme.spacing.xs} ${theme.spacing.md}`,
-		borderRadius: theme.radius.md,
-
-		...theme.fn.hover({
-			backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
-		}),
-
-		'&:active': theme.activeStyles,
-	},
-
-	dropdownFooter: {
-		backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
-		margin: `calc(${theme.spacing.md} * -1)`,
-		marginTop: theme.spacing.sm,
-		padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
-		paddingBottom: theme.spacing.xl,
-		borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-			}`,
-	},
-
-	hiddenMobile: {
-		[theme.fn.smallerThan(1400)]: {
-			display: 'none',
-		},
-	},
-
-	hiddenDesktop: {
-		[theme.fn.largerThan(1400)]: {
-			display: 'none',
-		},
-	},
-}));
-
+import classes from '../styles/Header.module.css';
 import { useDisclosure } from '@mantine/hooks';
 
 export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-	const [isLoading, setIsLoading] = useState<Boolean>(true)
+	const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+	const theme = useMantineTheme();
+
 	const tsSettings = useTranslations('settings')
 	const tsHeader = useTranslations('header')
 	const router = useRouter()
 
-	const { classes } = useStyles();
-	const [linksOpened, setLinksOpened] = useState({
-		services: false,
-	});
-
-	useEffect(() => {
-		setTimeout(() => {
-			setIsLoading(false)
-		}, 150)
-
-	}, []);
 
 	const handleLanguageSelection = () => {
 		if (tsSettings('lg') == 'es') {
@@ -105,57 +35,30 @@ export default function Menu() {
 		}
 	};
 
-	const handleToggle = (key: any) => {
-		setLinksOpened((prevState) => ({
-			...prevState,
-			//@ts-ignore
-			[key]: !prevState[key],
-		}));
-	};
 
-	const generateSubMenu = (menu: string) => {
+	const links = infoMenu.services.map((item) => (
+		<Link key={item.title[tsSettings('lg')]} href={item.url} target={item.newTab ? '_blank' : '_self'}>
+			<UnstyledButton className={classes.subLink}>
+				<Group wrap="nowrap" align="flex-start">
+					<ThemeIcon size={34} variant="default" radius="md">
+						<item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
+					</ThemeIcon>
+					<div>
+						<Text className='text-[13px]' fw={500}>
+							{item.title[tsSettings('lg')]}
+						</Text>
+						<Text className='text-[12px]' c="dimmed">
+							{item.description[tsSettings('lg')]}
+						</Text>
+					</div>
+				</Group>
+			</UnstyledButton>
+		</Link>
 
-		let menuSelected: any;
-
-		switch (menu) {
-			case 'services': menuSelected = infoMenu.services; break;
-		}
-
-		return menuSelected.map((item: any) => (
-			<Link key={item.title[tsSettings('lg')]} href={item.url} target={item.newTab ? '_blank' : '_self'}>
-				<UnstyledButton className={classes.subLink} key={item.title}>
-					<Group noWrap align="flex-start">
-						<ThemeIcon size={34} className={`bg-white border-[#ccc] rounded-md`} >
-							<item.icon size={rem(22)} color={'#1B75B0'} />
-						</ThemeIcon>
-						<div>
-							<Text size="sm" fw={500}>
-								{item.title[tsSettings('lg')]}
-							</Text>
-							<Text size="xs" color="dimmed">
-								{item.description[tsSettings('lg')]}
-							</Text>
-						</div>
-					</Group>
-				</UnstyledButton>
-			</Link>
-		))
-	}
-
-	if (isLoading) {
-		return (
-			<div className='container p-5 flex gap-x-5'>
-				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-				<div className='bg-gray w-3/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-				<div className='bg-gray w-1/5 h-14 rounded-xl opacity-20 skeleton-animation'></div>
-			</div>
-		);
-	}
-
+	));
 
 	return (
 		<Box className='border-header'>
-
 			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8'>
 				<div className='container flex text-sm text-white justify-center items-center gap-x-3'>
 					<div className='max-lg:hidden'>
@@ -165,8 +68,8 @@ export default function Menu() {
 				</div>
 			</div>
 
-			<Header height={85} px="md" bg={'none'} className='border-none container'>
-				<Group position="apart" sx={{ height: '100%' }}>
+			<header className={`${classes.header} border-none container`}>
+				<Group justify="space-between" h="100%">
 
 					<Link href={'/'}>
 						<img
@@ -177,38 +80,26 @@ export default function Menu() {
 						></img>
 					</Link>
 
+					<Group h="100%" gap={25} visibleFrom="xl">
+						<a href="#" className={`${classes.link} text-[14.7px]`}>
+							{tsHeader('about')}
+						</a>
 
-					<Group sx={{ height: '100%', width: '45%', justifyContent: 'space-around' }} spacing={0} className={classes.hiddenMobile}>
-
-
-						<HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
+						<HoverCard width={650} position="bottom" radius="md" shadow="md" withinPortal>
 							<HoverCard.Target>
-								<Link href={"#"} className={classes.link}>
-									<Center inline>
-										<Box component="span" mr={5}>
-											{tsHeader('about')}
-										</Box>
-									</Center>
-								</Link>
-							</HoverCard.Target>
-						</HoverCard>
-
-
-						<HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
-							<HoverCard.Target>
-								<Link href={"#"} className={classes.link}>
+								<a href="#" className={`${classes.link} text-[14.7px]`}>
 									<Center inline>
 										<Box component="span" mr={5}>
 											{tsHeader('services')}
 										</Box>
 										<FiChevronDown size={16} color={'#1B75B0'} />
 									</Center>
-								</Link>
+								</a>
 							</HoverCard.Target>
 
-							<HoverCard.Dropdown sx={{ overflow: 'hidden' }}>
-								<Group position="apart" px="md">
-									<Text fw={500}>
+							<HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+								<Group justify="space-between" px="md">
+									<Text fw={500} className='mt-1 text-[15.3px]'>
 										{tsHeader('services')}
 									</Text>
 								</Group>
@@ -219,107 +110,79 @@ export default function Menu() {
 									color={'gray.1'}
 								/>
 
-								<SimpleGrid cols={2} spacing={0}>
-									{generateSubMenu('services')}
+								<SimpleGrid cols={2} spacing={5}>
+									{links}
 								</SimpleGrid>
 
 								<div className={classes.dropdownFooter}>
-									<Group position="apart">
+									<Group justify="space-between">
 										<div>
-											<Text fw={500} fz="sm">
+											<Text fw={500} className='text-[13px]'>
 												{tsHeader('start_project')}
 											</Text>
-											<Text size="xs" color="dimmed">
+											<Text className='text-xs' c="dimmed">
 												{tsHeader('start_project_description')}
 											</Text>
 										</div>
-										<Button variant='default'>
+										<Button variant="default" className='font-medium text-[13px]'>
 											{tsHeader('contact_sales')}
 											<BsArrowRightShort className='text-lg ml-2'></BsArrowRightShort>
 										</Button>
-
-
 									</Group>
 								</div>
 							</HoverCard.Dropdown>
 						</HoverCard>
 
-						<HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
-							<HoverCard.Target>
-								<Link href={"#"} className={classes.link}>
-									<Center inline>
-										<Box component="span" mr={5}>
-											{tsHeader('portfolio')}
-										</Box>
-									</Center>
-								</Link>
-							</HoverCard.Target>
-						</HoverCard>
-
-						<HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
-							<HoverCard.Target>
-								<Link href={"#"} className={classes.link}>
-									<Center inline>
-										<Box component="span" mr={5}>
-											{tsHeader('contact')}
-										</Box>
-									</Center>
-								</Link>
-							</HoverCard.Target>
-						</HoverCard>
+						<a href="#" className={`${classes.link} text-[14.7px]`}>
+							{tsHeader('portfolio')}
+						</a>
+						<a href="#" className={`${classes.link} text-[14.7px]`}>
+							{tsHeader('contact')}
+						</a>
 
 					</Group>
 
-					<Group className={classes.hiddenMobile}>
-
-						<div className='border-user w-11 h-11 flex justify-center items-center  rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
+					<Group visibleFrom="xl">
+						<div className='border-user w-11 h-11 flex justify-center items-center rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
 							<RiTranslate2 className='text-xl opacity-50'></RiTranslate2>
 						</div>
 
 						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded-md border text-gray'>
-							<div className='font-medium'>
+							<div className='font-normal text-[15px]'>
 								{tsHeader('customers')}
 							</div>
 						</Link>
 
 						<Link href={'#'} className='bg-dark-blue px-7 py-2 rounded-md'>
-							<div className='text-white font-medium my-[1px]'>
+							<div className='text-white font-medium text-[15px] my-[1px]'>
 								<div className='flex justify-center items-center'>
 									{tsHeader('contact_us')}
 								</div>
 
 							</div>
 						</Link>
-
 					</Group>
 
-					<Burger opened={drawerOpened} onClick={toggleDrawer} className={`${classes.hiddenDesktop} max-md:mr-5`} color='#000' />
+					<Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="xl" className="max-md:mr-5" color='#000' />
 				</Group>
-			</Header>
+			</header>
 
 			<Drawer
 				title={tsHeader('menu')}
 				opened={drawerOpened}
-				onClose={toggleDrawer}
+				onClose={closeDrawer}
 				size="85%"
 				padding="40px"
-				className={classes.hiddenDesktop}
+				hiddenFrom="xl"
 				zIndex={1000000}
-
 			>
 				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'}>
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
-					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
-						<Center inline>
-							<Box component="span" mr={5}>
-								{tsHeader('about')}
-							</Box>
-						</Center>
-					</UnstyledButton>
-
-
-					<UnstyledButton className={`${classes.link} mb-8 mt-5`} onClick={() => handleToggle('services')}>
+					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`}>
+						{tsHeader('about')}
+					</a>
+					<UnstyledButton className={`${classes.link} mb-4 mt-5 !font-normal`} onClick={toggleLinks}>
 						<Center inline>
 							<Box component="span" mr={5}>
 								{tsHeader('services')}
@@ -327,25 +190,16 @@ export default function Menu() {
 							<FiChevronDown size={16} color={'#1B75B0'} />
 						</Center>
 					</UnstyledButton>
-					<Collapse in={linksOpened['services']}>{generateSubMenu('services')}</Collapse>
-
-					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
-						<Center inline>
-							<Box component="span" mr={5}>
-								{tsHeader('portfolio')}
-							</Box>
-						</Center>
-					</UnstyledButton>
-
-					<UnstyledButton className={`${classes.link} mb-8 mt-5`}>
-						<Center inline>
-							<Box component="span" mr={5}>
-								{tsHeader('contact')}
-							</Box>
-						</Center>
-					</UnstyledButton>
+					<Collapse in={linksOpened}>{links}</Collapse>
+					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`}>
+						{tsHeader('portfolio')}
+					</a>
+					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`}>
+						{tsHeader('contact')}
+					</a>
 
 					<Divider my="sm" color='#21232E43' />
+
 
 					<div className='mt-6 md:flex gap-x-3'>
 						<Link href={'#'}>
@@ -372,8 +226,6 @@ export default function Menu() {
 
 				</ScrollArea>
 			</Drawer>
-
-
 		</Box>
 	);
 }

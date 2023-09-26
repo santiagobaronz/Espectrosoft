@@ -1,0 +1,31 @@
+.header {
+	height: 85px;
+	padding-left: var(--mantine-spacing-md);
+	padding-right: var(--mantine-spacing-md);
+	border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  }
+  
+  .link {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding-left: var(--mantine-spacing-md);
+	padding-right: var(--mantine-spacing-md);
+	text-decoration: none;
+	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+	font-weight: 500;
+  }
+  
+  .subLink {
+	width: 100%;
+	padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+	border-radius: var(--mantine-radius-md);
+
+  }
+  
+  .dropdownFooter {
+	background-color: rgb(248, 249, 250);
+    margin: 0.75rem calc(-1rem) calc(-1rem);
+    padding: 1rem calc(2rem) 1.5rem;
+    border-top: 0.0625rem solid rgb(241, 243, 245);
+  }

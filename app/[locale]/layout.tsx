@@ -1,11 +1,13 @@
 'use client'
 
+import '@mantine/core/styles.css';
 import '../../src/styles/globals.css'
 import { Poppins} from 'next/font/google'
-
 import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
+
 import { MantineProvider } from '@mantine/core';
+
 import Menu from '../../src/Navigation/Menu';
 import Footer from '../../src/Navigation/Footer';
 
@@ -53,7 +55,7 @@ export default async function LocaleLayout({
 				<meta name="geo.position" content="-0.2295;-78.5249" />
 				<meta name="ICBM" content="-0.2295, -78.5249" />
 			</head>
-			<body className={`${pageFont.className}` }>
+			<body className={`${pageFont.className} !bg-white !text-black` }>
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					<MantineProvider>
 						<Menu></Menu>
