@@ -31,29 +31,29 @@ export default function Main() {
 					<div className='container text-white lg:flex gap-x-10'>
 						<div className='lg:w-3/6'>
 							<h2 className='text-3xl font-medium lg:mb-14 mb-16'>Nuestra cultura</h2>
-							<div className="lg:grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-12 mb-16">
-								<div className=' max-lg:mb-16'>
+							<div className="md:grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-12 mb-16">
+								<div className=' max-md:mb-16'>
 									<div className='bg-[#233442] w-fit p-3 rounded'>
 										<BsFillClipboardCheckFill className='text-2xl text-blue'></BsFillClipboardCheckFill>
 									</div>
 									<h3 className='mt-5 font-medium mb-3'>Calidad sobresaliente</h3>
 									<p className='font-light'>Creando software excepcional, siempre superando expectativas con rendimiento confiable y diseño impecable.</p>
 								</div>
-								<div className=' max-lg:mb-16'>
+								<div className=' max-md:mb-16'>
 									<div className='bg-[#233442] w-fit p-3 rounded'>
 										<BsPeopleFill className='text-2xl text-blue'></BsPeopleFill>
 									</div>
 									<h3 className='mt-5 font-medium mb-3'>Innovación continua</h3>
 									<p className='font-light'>Siempre en búsqueda de lo nuevo, exploramos tecnologías y enfoques innovadores para ofrecerte soluciones de vanguardia.</p>
 								</div>
-								<div className="row-start-2 mt-5 max-lg:mb-16">
+								<div className="row-start-2 mt-5 max-md:mb-16">
 									<div className='bg-[#233442] w-fit p-3 rounded'>
 										<BsFillRocketTakeoffFill className='text-2xl text-blue'></BsFillRocketTakeoffFill>
 									</div>
 									<h3 className='mt-5 font-medium mb-3'>Colaboración efectiva</h3>
 									<p className='font-light'>Trabajamos juntos para resultados sobresalientes, fusionando nuestras habilidades y conocimientos.</p>
 								</div>
-								<div className="row-start-2 mt-5 max-lg:mb-16">
+								<div className="row-start-2 mt-5 max-md:mb-16">
 									<div className='bg-[#233442] w-fit p-3 rounded'>
 										<BsHeartFill className='text-2xl text-blue'></BsHeartFill>
 									</div>
@@ -65,7 +65,7 @@ export default function Main() {
 								Solicita una reunión
 							</Link>
 						</div>
-						<div className='lg:w-3/6'>
+						<div className='lg:w-3/6 max-lg:hidden'>
 							<img src="https://imgur.com/o3Uz7gu.jpg" alt="Imagen cultura empresarial" className='h-full w-full lg:p-12 object-cover lg:rounded-[70px] max-lg:mt-16 max-lg:rounded' />
 						</div>
 
