@@ -17,16 +17,13 @@
 		"translate": "Traducir",
 		"menu": "Menú de navegación"
 	},
-
-	"footer":{
-		"description":"El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo.",
+	"footer": {
+		"description": "El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo.",
 		"solutions": "Soluciones",
 		"support": "Soporte",
 		"resources": "Recursos",
 		"legal": "Legal"
 	},
-
-
 	"homePage": {
 		"pre_title": "Preparados para nuevos proyectos",
 		"title_s1": "Soluciones",
@@ -43,16 +40,13 @@
 		"hosting_card_title": "Hospeda tu proyecto en la nube con nosotros",
 		"domains_card_category": "SERVICIOS DE REGISTRO DE DOMINIOS",
 		"domains_card_title": "Dominios profesionales para tu éxito en línea",
-		
 		"our_work": "NUESTRO TRABAJO",
 		"work_title": "Ayudamos a las empresas a dar vida a sus productos en todo el mundo.",
 		"work_description": "Nuestra experiencia ha ayudado a nuestros clientes a lanzar nuevas empresas en el ámbito digital a lo largo de los años. Echa un vistazo a algunos de nuestros mejores trabajos.",
 		"work_button": "Ver todos los trabajos",
 		"work_card_description": "Diseño y desarrollo web",
-
 		"ourServices": "NUESTROS SERVICIOS",
 		"ourServices_title": "Ofrecemos servicios que potencian tu marca o negocio en el mundo de la tecnología.",
-
 		"aboutUs": "SOBRE NOSOTROS",
 		"aboutUs_title": "El equipo convertirá tus ideas en realidad",
 		"aboutUs_description": "Sentimos que en esta era digital, la conexión es necesaria para desarrollar un imperio corporativo exitoso. Tener sitios web o aplicaciones móviles centrados en el usuario que sean fáciles de usar puede aumentar tu competitividad en el mercado.",
@@ -61,13 +55,35 @@
 		"aboutUs_card_2": "Clientes Satisfechos",
 		"aboutUs_card_3": "Profesionales",
 		"aboutUs_card_4": "Proyectos Asombrosos",
-
 		"testimonials": "TESTIMONIOS",
 		"testimonials_title": "Opiniones de nuestros clientes",
 		"testimonials_description": "Descubre lo que nuestros clientes satisfechos tienen que decir. Los testimonios son la voz de quienes han experimentado nuestros servicios de primera mano.",
-
 		"callToAction_title": "Potencia tu presencia en internet con nosotros",
 		"callToAction_description": "Nuestro equipo de expertos en desarrollo web y software está listo para convertir tu visión en realidad. Descubre cómo podemos ayudarte a destacar en línea.",
 		"callToAction_button": "¡Empecemos ahora!"
+	},
+	"about-us": {
+		"pre_title": "Transformamos ideas en tecnología",
+		"title_s1": "Creamos soluciones para",
+		"title_s2": "tu negocio",
+		"description": "Somos un equipo apasionado de expertos en desarrollo de software, dedicados a convertir tus ideas en soluciones tecnológicas innovadoras y exitosas.",
+		"our_culture_title": "Nuestra cultura",
+		"oc_card1_title": "Calidad excepcional",
+		"oc_card1_description": "Creamos software excepcional, siempre superando expectativas con un rendimiento confiable y un diseño impecable.",
+		"oc_card2_title": "Innovación continua",
+		"oc_card2_description": "Siempre en busca de lo nuevo, exploramos tecnologías y enfoques innovadores para ofrecerte soluciones de vanguardia.",
+		"oc_card3_title": "Colaboración efectiva",
+		"oc_card3_description": "Trabajamos juntos para obtener resultados sobresalientes, fusionando nuestras habilidades y conocimientos.",
+		"oc_card4_title": "Compromiso con el cliente",
+		"oc_card4_description": "Tu éxito es nuestra prioridad absoluta, brindándote soluciones que superan tus expectativas.",
+		"oc_button": "Solicita una reunión",
+		"stats_title": "Impulsamos tu crecimiento en internet juntos",
+		"stats_description": "En Espectrosoft, nos dedicamos a transformar ideas en soluciones digitales innovadoras. Con pasión por la tecnología y una comprensión profunda del panorama empresarial, nos especializamos en ofrecer aplicaciones web de vanguardia que impulsan la eficiencia y potencian el crecimiento.",
+		"alliances": "alianzas",
+		"stars_card1": "Profesionales a tu servicio",
+		"stars_card2": "Tecnologías en uso",
+		"stars_card3": "Proyectos de software",
+		"stars_card4": "Sitios web en línea",
+		"stars_card5": "Líneas de código"
 	}
 }

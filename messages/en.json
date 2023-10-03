@@ -17,15 +17,13 @@
 		"translate": "Translate",
 		"menu": "Navigation"
 	},
-
-	"footer":{
+	"footer": {
 		"description": "The future of your business is on the web, and we're here to build it.",
 		"solutions": "Solutions",
 		"support": "Support",
 		"resources": "Resources",
 		"legal": "Legal"
 	},
-
 	"homePage": {
 		"pre_title": "We are ready for new projects",
 		"title_s1": "Web",
@@ -42,16 +40,13 @@
 		"hosting_card_title": "Host your project in the cloud with us",
 		"domains_card_category": "DOMAIN REGISTRATION SERVICES",
 		"domains_card_title": "Professional domains for your online success",
-
 		"our_work": "OUR WORK",
 		"work_title": "We help businesses to make their product come to life, worldwide.",
 		"work_description": "Our experience has helped our clients launch new companies in the digital arena throughtout the years. Take a look at some of our greatest work.",
 		"work_button": "See all works",
 		"work_card_description": "Web design and development",
-
 		"ourServices": "OUR SERVICES",
 		"ourServices_title": "We offer services that enhance your brand or business in the world of technology.",
-
 		"aboutUs": "ABOUT US",
 		"aboutUs_title": "The team will turn your ideas into reality",
 		"aboutUs_description": "We feel in this digital age, connection is required to develop a successful corporate empire. Having user-focused websites or mobile applications that are simple to use can incrase your market competitiveness.",
@@ -60,13 +55,35 @@
 		"aboutUs_card_2": "Happy Clients",
 		"aboutUs_card_3": "Professionals",
 		"aboutUs_card_4": "Amazing Project",
-
 		"testimonials": "TESTIMONIALS",
 		"testimonials_title": "Reviews from our clients",
 		"testimonials_description": "Discover what our satisfied customers have to say. Testimonials are the voices of those who have experienced our services firsthand.",
-
 		"callToAction_title": "Strengthen your online presence with us",
 		"callToAction_description": "Our team of web and software development experts is ready to turn your vision into reality. Discover how we can help you stand out online.",
 		"callToAction_button": "Let's get started now!"
+	},
+	"about-us": {
+		"pre_title": "We transform ideas into technology",
+		"title_s1": "We build solutions for",
+		"title_s2": "your business",
+		"description": "We are a passionate team of software development experts, dedicated to turning your ideas into innovative and successful technological solutions.",
+		"our_culture_title": "Our culture",
+		"oc_card1_title": "Outstanding quality",
+		"oc_card1_description": "Creating exceptional software, always exceeding expectations with reliable performance and impeccable design.",
+		"oc_card2_title": "Continuous innovation",
+		"oc_card2_description": "Always in search of the new, we explore innovative technologies and approaches to offer you cutting-edge solutions.",
+		"oc_card3_title": "Effective collaboration",
+		"oc_card3_description": "We work together for outstanding results, merging our skills and knowledge.",
+		"oc_card4_title": "Engagement with the client",
+		"oc_card4_description": "Your success is our absolute priority, providing you with solutions that exceed your expectations.",
+		"oc_button": "Request a meeting",
+		"stats_title": "We promote your growth together",
+		"stats_description": "At Espectrosoft, we are dedicated to transforming ideas into innovative digital solutions. With a passion for technology and a deep understanding of the business landscape, we specialize in delivering cutting-edge web applications that drive efficiency and empower growth.",
+		"alliances": "alliances",
+		"stars_card1": "Professionals at your service",
+		"stars_card2": "Technologies in use",
+		"stars_card3": "Software projects",
+		"stars_card4": "Online Websites",
+		"stars_card5": "Lines of code"
 	}
 }
