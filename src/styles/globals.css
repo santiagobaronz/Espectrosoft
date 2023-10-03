@@ -76,7 +76,7 @@
 }
 
 @media (max-width: 1000px) {
-    .bg-header {
+    .bg-header, .bg-stats, .bg-culture {
         background-image: none;
     }
 }

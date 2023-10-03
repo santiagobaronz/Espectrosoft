@@ -37,7 +37,7 @@ export default function Menu() {
 
 
 	const links = infoMenu.services.map((item) => (
-		<Link key={item.title[tsSettings('lg')]} href={item.url} target={item.newTab ? '_blank' : '_self'}>
+		<Link key={item.title[tsSettings('lg')]} href={item.url} target={item.newTab ? '_blank' : '_self'} onClick={toggleDrawer}>
 			<UnstyledButton className={classes.subLink}>
 				<Group wrap="nowrap" align="flex-start">
 					<ThemeIcon size={34} variant="default" radius="md">
@@ -179,7 +179,7 @@ export default function Menu() {
 				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'}>
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
-					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`}>
+					<a href="/about-us" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
 						{tsHeader('about')}
 					</a>
 					<UnstyledButton className={`${classes.link} mb-4 mt-5 !font-normal`} onClick={toggleLinks}>
@@ -191,10 +191,10 @@ export default function Menu() {
 						</Center>
 					</UnstyledButton>
 					<Collapse in={linksOpened}>{links}</Collapse>
-					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`}>
+					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`} onClick={toggleDrawer}>
 						{tsHeader('portfolio')}
 					</a>
-					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`}>
+					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
 						{tsHeader('contact')}
 					</a>
 
