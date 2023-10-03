@@ -81,7 +81,7 @@ export default function Menu() {
 					</Link>
 
 					<Group h="100%" gap={25} visibleFrom="xl">
-						<a href="#" className={`${classes.link} text-[14.7px]`}>
+						<a href="/about-us" className={`${classes.link} text-[14.7px]`}>
 							{tsHeader('about')}
 						</a>
 

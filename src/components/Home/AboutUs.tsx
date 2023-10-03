@@ -17,7 +17,7 @@ export default function AboutUs() {
 
 					<div className="md:grid grid-cols-2 grid-rows-2 gap-7 mt-12 text-center ">
 						<div className='border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5'>
-							<p className='text-4xl font-semibold'>8</p>
+							<p className='text-4xl font-semibold'>2+</p>
 							<p className='text-gray-200 mt-1'>{tsHomepage('aboutUs_card_1')}</p>
 						</div>
 						<div className='border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5'>
@@ -25,7 +25,7 @@ export default function AboutUs() {
 							<p className='text-gray-200 mt-1'>{tsHomepage('aboutUs_card_2')}</p>
 						</div>
 						<div className="row-start-2 border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5">
-							<p className='text-4xl font-semibold'>40+</p>
+							<p className='text-4xl font-semibold'>15+</p>
 							<p className='text-gray-200 mt-1'>{tsHomepage('aboutUs_card_3')}</p>
 						</div>
 						<div className="row-start-2 border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl">

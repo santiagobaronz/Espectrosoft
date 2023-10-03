@@ -17,6 +17,31 @@
 	background-position: 100%;
 }
 
+.bg-about-us{
+	background-image: url('https://imgur.com/4em97og.png');
+	background-repeat: no-repeat;
+	background-size: 43%;
+	background-position: 100%;
+}
+
+.bg-culture{
+	background-image: url('https://imgur.com/nddEtk8.png');
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position-x: 106%;
+	background-position-y: 250px;
+}
+
+
+.bg-stats{
+	background-image: url('https://imgur.com/JEaIxVD.png');
+	background-repeat: no-repeat;
+	background-size: 13%;
+	background-position-x: -2%;
+	background-position-y: 150px;
+}
+
+
 .introduction{
 	background-image: url('https://imgur.com/tiE6bYD.jpg');
 	background-size: cover;

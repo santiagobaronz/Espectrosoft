@@ -61,8 +61,8 @@ export const infoMenu = {
 				en: 'Web maintenance',
 			},
 			description: {
-				es: 'Actualizamos, optimizamos y arreglamos tu sitio web.',
-				en: 'We update, optimize and fix your website.',
+				es: 'Actualizamos, optimizamos y arreglamos tu aplicación.',
+				en: 'We update, optimize and fix your app.',
 			},
 			url: '/desarrollo-web',
 			newTab: false
