@@ -1,16 +1,13 @@
-import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export default function Testimonials() {
-
-	const tsHomepage = useTranslations('homePage')
 
 	return (
 		<div className='container max-lg:px-10'>
 			<div className='mt-28 xl:mx-20'>
 				<div>
-					<h3 className='md:text-center text-4xl font-bold mb-5'>{tsHomepage('testimonials_title')}</h3>
-					<p className='md:text-center lg:w-4/6 mx-auto text-gray-200'>{tsHomepage('testimonials_description')}</p>
+					<h3 className='md:text-center text-4xl font-bold mb-5'>TESTIMONIOS</h3>
+					<p className='md:text-center lg:w-4/6 mx-auto text-gray-200'>Opiniones de nuestros clientes</p>
 				</div>
 
 				<div className='lg:flex gap-x-8 mt-10'>

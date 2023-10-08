@@ -1,20 +1,17 @@
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 import { BsArrowRight, BsCodeSlash, BsFillLightningFill, BsGlobe, BsServer, BsWindowPlus, BsWrench } from 'react-icons/bs'
 
 export default function OurWork() {
 
-	const tsHomepage = useTranslations('homePage')
-
 	return (
 		<div className='container max-lg:px-10'>
 			<div className='lg:flex items-center mt-20 justify-center'>
 				<div className='xl:w-4/6 lg:text-center'>
-					<p className='text-sm mb-5 text-gray-200 font-medium'>{tsHomepage('our_work')}</p>
-					<h3 className='text-4xl font-bold'>{tsHomepage('work_title')}</h3>
-					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5 text-lg'>{tsHomepage('work_description')}</p>
-					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>{tsHomepage('work_button')}</Link>
+					<p className='text-sm mb-5 text-gray-200 font-medium'>NUESTRO TRABAJO</p>
+					<h3 className='text-4xl font-bold'>Ayudamos a las empresas a dar vida a sus productos en todo el mundo.</h3>
+					<p className='mb-8 max-lg:mt-7 text-gray-200 mt-5 text-lg'>Nuestra experiencia ha ayudado a nuestros clientes a lanzar nuevas empresas en el ámbito digital a lo largo de los años. Echa un vistazo a algunos de nuestros mejores trabajos.</p>
+					<Link href={'#'} className='text-blue lg:hidden font-semibold bg-blue-bg px-10 py-3 rounded-full'>Ver todos los trabajos</Link>
 				</div>
 			</div>
 
@@ -25,7 +22,7 @@ export default function OurWork() {
 						<div className='flex items-center justify-between mt-6'>
 							<div className='w-9/12'>
 								<h4 className='text-xl font-semibold whitespace-nowrap text-ellipsis overflow-hidden'>Servismile | Consultorio odontologico</h4>
-								<p>{tsHomepage('work_card_description')}</p>
+								<p>Diseño y desarrollo web</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -40,7 +37,7 @@ export default function OurWork() {
 						<div className='flex items-center justify-between mt-6'>
 							<div className='w-9/12'>
 								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>Latin American Aeronautics | Aviación</h4>
-								<p>{tsHomepage('work_card_description')}</p>
+								<p>Diseño y desarrollo web</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -55,7 +52,7 @@ export default function OurWork() {
 						<div className='flex items-center justify-between mt-6'>
 							<div className='w-9/12'>
 								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>IVAO Ecuador | Simulación Área</h4>
-								<p>{tsHomepage('work_card_description')}</p>
+								<p>Diseño y desarrollo web</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
@@ -70,7 +67,7 @@ export default function OurWork() {
 						<div className='flex items-center justify-between mt-6'>
 							<div className='w-9/12'>
 								<h4 className='text-xl font-semibold  whitespace-nowrap text-ellipsis overflow-hidden'>Servicesmile | Consultorio odontologico</h4>
-								<p>{tsHomepage('work_card_description')}</p>
+								<p>Diseño y desarrollo web</p>
 							</div>
 							<div className='px-3 py-3 rounded-full border border-[#ccc]'>
 								<BsArrowRight></BsArrowRight>
