@@ -1,15 +1,13 @@
-'use client'
 
 import '@mantine/core/styles.css';
-import '../../src/styles/globals.css'
-import { Poppins} from 'next/font/google'
-import { NextIntlClientProvider } from 'next-intl';
+import '../src/styles/globals.css'
+import { Poppins } from 'next/font/google'
 import { ReactNode } from 'react';
 
 import { MantineProvider } from '@mantine/core';
 
-import Menu from '../../src/Navigation/Menu';
-import Footer from '../../src/Navigation/Footer';
+import Menu from '../src/Navigation/Menu';
+import Footer from '../src/Navigation/Footer';
 
 const pageFont = Poppins({
 	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
@@ -18,29 +16,13 @@ const pageFont = Poppins({
 
 type Props = {
 	children: ReactNode;
-	params: { locale: string };
 };
 
-async function getMessages(locale: string) {
-	try {
-		return (await import(`../../messages/${locale}.json`)).default;
-	} catch (error) {
-		console.log(error)
-	}
-}
 
-export async function generateStaticParams() {
-	return ['en', 'es'].map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({
-	children,
-	params: { locale }
-}: Props) {
-	const messages = await getMessages(locale);
+export default async function RootLayout({children}: Props) {
 
 	return (
-		<html lang={locale}>
+		<html lang={'es'}>
 			<head>
 				<title>Espectrosoft | Desarrollo web profesional</title>
 				<meta name="author" content="Espectrosoft" />
@@ -55,14 +37,12 @@ export default async function LocaleLayout({
 				<meta name="geo.position" content="-0.2295;-78.5249" />
 				<meta name="ICBM" content="-0.2295, -78.5249" />
 			</head>
-			<body className={`${pageFont.className} !bg-white !text-black` }>
-				<NextIntlClientProvider locale={locale} messages={messages}>
-					<MantineProvider>
-						<Menu></Menu>
-						{children}
-						<Footer></Footer>
-					</MantineProvider>
-				</NextIntlClientProvider>
+			<body className={`${pageFont.className} !bg-white !text-black`}>
+				<MantineProvider>
+					<Menu></Menu>
+					{children}
+					<Footer></Footer>
+				</MantineProvider>
 			</body>
 		</html>
 	);

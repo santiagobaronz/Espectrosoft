@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import CallToAction from '../../../src/components/CallToAction'
+import CallToAction from '../../src/components/CallToAction'
 
 export default function PrivacyPolicy() {
 	return (

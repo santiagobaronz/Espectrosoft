@@ -1,19 +1,20 @@
+'use client'
+
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
 
-	const tsHomepage = useTranslations('footer')
 
 	return (
 		<footer className="bg-white mt-10 max-md:mx-8" aria-labelledby="footer-heading">
-			<h2 id="footer-heading" className="sr-only">{tsHomepage('description')}</h2>
+			<h2 id="footer-heading" className="sr-only">El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo.</h2>
 			<div className="container max-w-7xl py-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
 					<div className="space-y-4 xl:col-span-1">
 						<img className="h-auto w-[194px] -ml-3" src="https://imgur.com/YiRVCbI.png" alt="Logo de Espectrosoft" />
-						<p className="text-base text-gray-200 lg:mr-20 pb-5">{tsHomepage('description')}</p>
+						<p className="text-base text-gray-200 lg:mr-20 pb-5">El futuro de tu negocio se encuentra en la web, y nosotros estamos aquí para construirlo.</p>
 						<div className="flex space-x-6">
 							<a href="https://twitter.com/PraiseHive" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
 								<span className="sr-only">Twitter</span>
@@ -40,7 +41,7 @@ export default function Footer() {
 					<div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
-								<h3 className="text-base font-medium text-gray-900">{tsHomepage('solutions')}</h3>
+								<h3 className="text-base font-medium text-gray-900">Soluciones</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									<li>
 										<a href="/#features" className="text-base text-gray-500 hover:text-gray-900">Features</a>
@@ -53,7 +54,7 @@ export default function Footer() {
 									</li>
 								</ul>
 							</div>
-							<div className="mt-12 md:mt-0"><h3 className="text-base font-medium text-gray-900">{tsHomepage('support')}</h3>
+							<div className="mt-12 md:mt-0"><h3 className="text-base font-medium text-gray-900">Soporte</h3>
 								<ul role="list" className="mt-4 space-y-4"><li>
 									<a href="mailto:hello@praisehive.com" className="text-base text-gray-500 hover:text-gray-900">Contact</a>
 								</li>
@@ -61,7 +62,7 @@ export default function Footer() {
 							</div>
 						</div>
 						<div className="md:grid md:grid-cols-2 md:gap-8"><div>
-							<h3 className="text-base font-medium text-gray-900">{tsHomepage('resources')}</h3>
+							<h3 className="text-base font-medium text-gray-900">Recursos</h3>
 							<ul role="list" className="mt-4 space-y-4">
 								<li>
 									<a href="/blog" className="text-base text-gray-500 hover:text-gray-900">Blog</a>
@@ -72,7 +73,7 @@ export default function Footer() {
 							</ul>
 						</div>
 							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-medium text-gray-900">{tsHomepage('legal')}</h3>
+								<h3 className="text-base font-medium text-gray-900">Legal</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									<li>
 										<Link href="/privacy-policy" className="text-base text-gray-500 hover:text-gray-900">Privacy policy</Link>

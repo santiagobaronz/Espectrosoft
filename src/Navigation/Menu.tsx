@@ -1,5 +1,4 @@
-import { useTranslations } from 'next-intl';
-import { useRouter } from 'next-intl/client';
+'use client'
 
 import {
 	HoverCard, Group, Button, UnstyledButton, Text,
@@ -8,9 +7,8 @@ import {
 } from '@mantine/core';
 
 import Link from 'next/link';
-import { FiChevronDown, FiLoader, FiX } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
-import { useEffect, useState } from 'react';
 import { infoMenu } from './Items/InfoMenu';
 import { BsArrowRightShort, BsBell } from 'react-icons/bs';
 import classes from '../styles/Header.module.css';
@@ -22,22 +20,10 @@ export default function Menu() {
 	const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
 	const theme = useMantineTheme();
 
-	const tsSettings = useTranslations('settings')
-	const tsHeader = useTranslations('header')
-	const router = useRouter()
-
-
-	const handleLanguageSelection = () => {
-		if (tsSettings('lg') == 'es') {
-			router.push('/', { locale: 'en' });
-		} else {
-			router.push('/', { locale: 'es' });
-		}
-	};
 
 
 	const links = infoMenu.services.map((item) => (
-		<Link key={item.title[tsSettings('lg')]} href={item.url} target={item.newTab ? '_blank' : '_self'} onClick={toggleDrawer}>
+		<Link key={item.title['es']} href={item.url} target={item.newTab ? '_blank' : '_self'} onClick={toggleDrawer}>
 			<UnstyledButton className={classes.subLink}>
 				<Group wrap="nowrap" align="flex-start">
 					<ThemeIcon size={34} variant="default" radius="md">
@@ -45,17 +31,17 @@ export default function Menu() {
 					</ThemeIcon>
 					<div>
 						<Text className='text-[13px]' fw={500}>
-							{item.title[tsSettings('lg')]}
+							<span>{item.title['es']}</span>
 						</Text>
 						<Text className='text-[12px]' c="dimmed">
-							{item.description[tsSettings('lg')]}
+							{item.description['es']}
 						</Text>
 					</div>
 				</Group>
 			</UnstyledButton>
 		</Link>
-
 	));
+
 
 	return (
 		<Box className='border-header'>
@@ -64,7 +50,7 @@ export default function Menu() {
 					<div className='max-lg:hidden'>
 						<BsBell></BsBell>
 					</div>
-					{tsSettings('main_alert')}
+					<div>Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web</div>
 				</div>
 			</div>
 
@@ -82,25 +68,25 @@ export default function Menu() {
 
 					<Group h="100%" gap={25} visibleFrom="xl">
 						<a href="/about-us" className={`${classes.link} text-[14.7px]`}>
-							{tsHeader('about')}
+							Nosotros
 						</a>
 
 						<HoverCard width={650} position="bottom" radius="md" shadow="md" withinPortal>
 							<HoverCard.Target>
-								<a href="#" className={`${classes.link} text-[14.7px]`}>
+								<div className={`${classes.link} text-[14.7px] cursor-pointer`}>
 									<Center inline>
 										<Box component="span" mr={5}>
-											{tsHeader('services')}
+											Servicios y precios
 										</Box>
 										<FiChevronDown size={16} color={'#1B75B0'} />
 									</Center>
-								</a>
+								</div>
 							</HoverCard.Target>
 
 							<HoverCard.Dropdown style={{ overflow: 'hidden' }}>
 								<Group justify="space-between" px="md">
 									<Text fw={500} className='mt-1 text-[15.3px]'>
-										{tsHeader('services')}
+										Servicios y precios
 									</Text>
 								</Group>
 
@@ -118,14 +104,14 @@ export default function Menu() {
 									<Group justify="space-between">
 										<div>
 											<Text fw={500} className='text-[13px]'>
-												{tsHeader('start_project')}
+												Comienza ahora con tu proyecto
 											</Text>
 											<Text className='text-xs' c="dimmed">
-												{tsHeader('start_project_description')}
+												Estamos encantados de ayudarte en tu solicitud.
 											</Text>
 										</div>
 										<Button variant="default" className='font-medium text-[13px]'>
-											{tsHeader('contact_sales')}
+											Contactar con ventas
 											<BsArrowRightShort className='text-lg ml-2'></BsArrowRightShort>
 										</Button>
 									</Group>
@@ -134,29 +120,29 @@ export default function Menu() {
 						</HoverCard>
 
 						<a href="#" className={`${classes.link} text-[14.7px]`}>
-							{tsHeader('portfolio')}
+							Portafolio
 						</a>
 						<a href="#" className={`${classes.link} text-[14.7px]`}>
-							{tsHeader('contact')}
+							Contactanos
 						</a>
 
 					</Group>
 
 					<Group visibleFrom="xl">
-						<div className='border-user w-11 h-11 flex justify-center items-center rounded-md cursor-pointer text-gray-200' onClick={handleLanguageSelection}>
+						<div className='border-user w-11 h-11 flex justify-center items-center rounded-md cursor-pointer text-gray-200'>
 							<RiTranslate2 className='text-xl opacity-50'></RiTranslate2>
 						</div>
 
 						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded-md border text-gray'>
 							<div className='font-normal text-[15px]'>
-								{tsHeader('customers')}
+								Clientes
 							</div>
 						</Link>
 
 						<Link href={'#'} className='bg-dark-blue px-7 py-2 rounded-md'>
 							<div className='text-white font-medium text-[15px] my-[1px]'>
 								<div className='flex justify-center items-center'>
-									{tsHeader('contact_us')}
+									Cotizar ahora
 								</div>
 
 							</div>
@@ -168,7 +154,7 @@ export default function Menu() {
 			</header>
 
 			<Drawer
-				title={tsHeader('menu')}
+				title={'Menú de navegación'}
 				opened={drawerOpened}
 				onClose={closeDrawer}
 				size="85%"
@@ -180,22 +166,22 @@ export default function Menu() {
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
 					<a href="/about-us" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
-						{tsHeader('about')}
+						Nosotros
 					</a>
 					<UnstyledButton className={`${classes.link} mb-4 mt-5 !font-normal`} onClick={toggleLinks}>
 						<Center inline>
 							<Box component="span" mr={5}>
-								{tsHeader('services')}
+								Servicios y precios
 							</Box>
 							<FiChevronDown size={16} color={'#1B75B0'} />
 						</Center>
 					</UnstyledButton>
 					<Collapse in={linksOpened}>{links}</Collapse>
 					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`} onClick={toggleDrawer}>
-						{tsHeader('portfolio')}
+						Portafolio
 					</a>
 					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
-						{tsHeader('contact')}
+						Contactanos
 					</a>
 
 					<Divider my="sm" color='#21232E43' />
@@ -204,26 +190,16 @@ export default function Menu() {
 					<div className='mt-6 md:flex gap-x-3'>
 						<Link href={'#'}>
 							<button className='bg-light-blue text-white px-5 py-[9px] rounded-md max-md:w-full max-md:mb-3'>
-								{tsHeader('customers')}
+								Clientes
 							</button>
 						</Link>
 
 						<Link href={'#'}>
 							<button className='bg-dark-blue text-white px-5 py-[9px] rounded-md max-md:w-full max-md:mb-3'>
-								{tsHeader('contact_us')}
+								Cotizar ahora
 							</button>
 						</Link>
-
-						<div className='md:flex gap-x-5 justify-center mt-1 flex-wrap'>
-							<div onClick={handleLanguageSelection} className='border p-2 rounded-md opacity-40 cursor-pointer flex max-md:justify-center max-md:gap-x-5 items-center max-md:mb-3'>
-								<RiTranslate2 className='text-xl'></RiTranslate2>
-								<div className='md:hidden text-black'>
-									{tsHeader('translate')}
-								</div>
-							</div>
-						</div>
 					</div>
-
 				</ScrollArea>
 			</Drawer>
 		</Box>
