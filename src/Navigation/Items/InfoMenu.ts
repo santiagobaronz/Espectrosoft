@@ -12,7 +12,7 @@ export const infoMenu = {
 				es: 'Construimos sitios web para que impulses tu marca.',
 				en: 'We build websites for you to boost your brand.',
 			},
-			url: '/desarrollo-web',
+			url: '/web-development',
 			newTab: false
 		},
 		{

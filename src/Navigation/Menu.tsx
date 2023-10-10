@@ -13,17 +13,24 @@ import { infoMenu } from './Items/InfoMenu';
 import { BsArrowRightShort, BsBell } from 'react-icons/bs';
 import classes from '../styles/Header.module.css';
 import { useDisclosure } from '@mantine/hooks';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 	const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+	const [isActive, setIsActive] = useState(false);
 	const theme = useMantineTheme();
+	const pathname = usePathname();
 
 
+	useEffect(() => {
+		setIsActive(pathname === '/web-development');
+	  }, [pathname]);
 
 	const links = infoMenu.services.map((item) => (
-		<Link key={item.title['es']} href={item.url} target={item.newTab ? '_blank' : '_self'} onClick={toggleDrawer}>
+		<Link key={item.title['es']} href={item.url} target={item.newTab ? '_blank' : '_self'}>
 			<UnstyledButton className={classes.subLink}>
 				<Group wrap="nowrap" align="flex-start">
 					<ThemeIcon size={34} variant="default" radius="md">
@@ -44,7 +51,7 @@ export default function Menu() {
 
 
 	return (
-		<Box className='border-header'>
+		<Box className={`${isActive ? 'bg-blue-section text-white' : 'bg-white border-header'}`}>
 			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8'>
 				<div className='container flex text-sm text-white justify-center items-center gap-x-3'>
 					<div className='max-lg:hidden'>
@@ -59,7 +66,7 @@ export default function Menu() {
 
 					<Link href={'/'}>
 						<img
-							src={'https://i.imgur.com/YiRVCbI.png'}
+							src={isActive ? 'https://i.imgur.com/Qe9L9hT.png' : 'https://i.imgur.com/YiRVCbI.png'}
 							width={212}
 							height={30}
 							alt='Logo de Espectrosoft'
@@ -67,18 +74,18 @@ export default function Menu() {
 					</Link>
 
 					<Group h="100%" gap={25} visibleFrom="xl">
-						<a href="/about-us" className={`${classes.link} text-[14.7px]`}>
+						<Link href="/about-us" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
 							Nosotros
-						</a>
+						</Link>
 
 						<HoverCard width={650} position="bottom" radius="md" shadow="md" withinPortal>
 							<HoverCard.Target>
-								<div className={`${classes.link} text-[14.7px] cursor-pointer`}>
+								<div className={`${classes.link} text-[14.7px] cursor-pointer ${isActive ? 'font-normal' : 'font-medium'}`}>
 									<Center inline>
 										<Box component="span" mr={5}>
 											Servicios y precios
 										</Box>
-										<FiChevronDown size={16} color={'#1B75B0'} />
+										<FiChevronDown size={16} color={`${isActive ? '#FFFFFF' : '#1B75B0'}`} />
 									</Center>
 								</div>
 							</HoverCard.Target>
@@ -119,28 +126,26 @@ export default function Menu() {
 							</HoverCard.Dropdown>
 						</HoverCard>
 
-						<a href="#" className={`${classes.link} text-[14.7px]`}>
+						<Link href="#" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
 							Portafolio
-						</a>
-						<a href="#" className={`${classes.link} text-[14.7px]`}>
+						</Link>
+						<Link href="#" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
 							Contactanos
-						</a>
+						</Link>
 
 					</Group>
 
 					<Group visibleFrom="xl">
-						<div className='border-user w-11 h-11 flex justify-center items-center rounded-md cursor-pointer text-gray-200'>
-							<RiTranslate2 className='text-xl opacity-50'></RiTranslate2>
-						</div>
 
-						<Link href={'#'} className='flex justify-center items-center gap-x-2 border-user px-4 py-2 rounded-md border text-gray'>
+						<Link href={'#'} className={`flex justify-center items-center gap-x-2 px-4 py-2 rounded-md border 
+							${isActive ? 'font-normal border-white border-opacity-50' : 'font-medium text-gray border-user'}`}>
 							<div className='font-normal text-[15px]'>
 								Clientes
 							</div>
 						</Link>
 
 						<Link href={'#'} className='bg-dark-blue px-7 py-2 rounded-md'>
-							<div className='text-white font-medium text-[15px] my-[1px]'>
+							<div className='text-white font-normal text-[15px] my-[1px]'>
 								<div className='flex justify-center items-center'>
 									Cotizar ahora
 								</div>
