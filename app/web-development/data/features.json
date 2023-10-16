@@ -1,0 +1,108 @@
+[
+    
+    {
+        "feature": "Hosting incluido (1 año)",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Acceso a cuenta cPanel",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Dominio (.com) incluido",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Certificado SSL gratuito",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Botones a redes sociales",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Formularios de contacto",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Sistema de pagos integrado",
+        "type": "boolean",
+        "professional": false,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Galería de imágenes",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Diseño adaptable a dispositivos móviles",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+	{
+        "feature": "Copias de seguridad diarias (Descargarbles)",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Optimización SEO",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Integración con servicios de GSuite",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Capacitación incluida",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Soporte vía chat 24/7",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+    {
+        "feature": "Soporte vía llamada 24/7",
+        "type": "boolean",
+        "professional": false,
+        "business": true,
+        "corporate": true
+    }
+]

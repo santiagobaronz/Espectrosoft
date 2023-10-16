@@ -154,7 +154,7 @@ export default function Menu() {
 						</Link>
 					</Group>
 
-					<Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="xl" className="max-md:mr-5" color='#000' />
+					<Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="xl" className="max-md:mr-5" color={`${isActive ? '#FFF' : '#000'}`} />
 				</Group>
 			</header>
 

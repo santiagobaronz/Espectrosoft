@@ -24,7 +24,7 @@ export default async function RootLayout({children}: Props) {
 	return (
 		<html lang={'es'}>
 			<head>
-				<title>Espectrosoft | Desarrollo web profesional</title>
+				<title>Espectrosoft | Desarrollo web profesional en Ecuador</title>
 				<meta name="author" content="Espectrosoft" />
 				<meta name="description" content="Destaca en línea con nuestro servicio de desarrollo de sitios web profesionales y personalizados. Diseños a medida que se adaptan a tu negocio a precios inigualables." />
 				<link rel="icon" href="https://i.imgur.com/ZIyZSrF.png" sizes="any" />
