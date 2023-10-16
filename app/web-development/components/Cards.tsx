@@ -21,12 +21,12 @@ export default function Cards() {
 				<div className='font-normal flex items-center mt-6 mb-6'>
 					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
 					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>160</p>
+						<p className='text-[40px] font-medium -ml-1'>199.00</p>
 						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
 					</div>
 				</div>
 
-				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $75.00 anuales.</p>
+				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $109.99 anuales.</p>
 
 				<Link href={'#'}>
 					<button className='w-full h-[52px] rounded-xl mt-10 bg-[#1bb3f7] hover:bg-[#089EE1] transition-all'>
