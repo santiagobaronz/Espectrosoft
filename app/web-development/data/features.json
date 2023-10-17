@@ -15,7 +15,14 @@
         "corporate": true
     },
     {
-        "feature": "Dominio (.com) incluido",
+        "feature": "Dominio (.com ó .net) incluido",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+	{
+        "feature": "Subdominios ilimitados",
         "type": "boolean",
         "professional": true,
         "business": true,
@@ -64,7 +71,21 @@
         "corporate": true
     },
 	{
-        "feature": "Copias de seguridad diarias (Descargarbles)",
+        "feature": "Copias de seguridad diarias (Descargables)",
+        "type": "boolean",
+        "professional": true,
+        "business": true,
+        "corporate": true
+    },
+	{
+        "feature": "Registro de usuarios",
+        "type": "boolean",
+        "professional": false,
+        "business": true,
+        "corporate": true
+    },
+	{
+        "feature": "Integración con Google Analytics",
         "type": "boolean",
         "professional": true,
         "business": true,

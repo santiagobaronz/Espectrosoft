@@ -21,7 +21,7 @@ export default function Cards() {
 				<div className='font-normal flex items-center mt-6 mb-6'>
 					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
 					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>199.99</p>
+						<p className='text-[40px] font-medium -ml-1'>199,99</p>
 						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
 					</div>
 				</div>
@@ -50,7 +50,7 @@ export default function Cards() {
 				<div className='font-normal flex items-center mt-6 mb-6'>
 					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
 					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>479.00</p>
+						<p className='text-[40px] font-medium -ml-1'>479,00</p>
 						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ export default function Cards() {
 				<div className='font-normal flex items-center mt-6 mb-6'>
 					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
 					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>619.99</p>
+						<p className='text-[40px] font-medium -ml-1'>619,99</p>
 						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
 					</div>
 				</div>
