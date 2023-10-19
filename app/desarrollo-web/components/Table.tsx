@@ -12,7 +12,7 @@ export default function Table() {
 	}, []);
 
 	const getBooleanResult = (booleanResult, type) => {
-		return booleanResult ? (<div className={`check-${type}`}><HiCheck className='text-sm'></HiCheck></div>) : '-';
+		return booleanResult ? (<div className={`check-${type}`}><HiCheck className='text-sm'></HiCheck></div>) : <p className='text-gray'>-</p>;
 	}
 
 	const features = data.map((feature, index) => {
@@ -32,10 +32,10 @@ export default function Table() {
 
 		return (
 			<tr className="border-b border-gray-200 border-opacity-10" key={index}>
-				<th scope="row" className="px-6 py-5 text-left font-medium">
+				<th scope="row" className="px-6 py-5 text-left font-medium text-white">
 					{feature.feature}
 				</th>
-				<td className="px-6 py-4 text-center">
+				<td className="px-6 py-4 text-center ">
 					{professionalResult}
 				</td>
 				<td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 text-center">
@@ -49,19 +49,20 @@ export default function Table() {
 	});
 
 	return (
-		<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+		<div className="relative overflow-x-auto sm:rounded-lg">
 			<table className="w-full">
 				<thead>
-					<tr className='bg-[#F4F4F6]'>
-						<th scope="col" className="px-6 py-7">
+					<tr className=''>
+						<th scope="col" className="px-6 text-left py-10 font-semibold text-lg text-white">
+							Características de nuestros planes
 						</th>
-						<th scope="col" className="px-6 py-5 font-semibold text-lg">
+						<th scope="col" className="px-6 py-10 font-semibold text-lg text-white">
 							Profesional
 						</th>
-						<th scope="col" className="px-6 py-5 font-semibold text-lg">
+						<th scope="col" className="px-6 py-10 font-semibold text-lg text-white">
 							Empresarial
 						</th>
-						<th scope="col" className="px-6 py-5 font-semibold text-lg">
+						<th scope="col" className="px-6 py-10 font-semibold text-lg text-white">
 							Corporativo
 						</th>
 					</tr>

@@ -7,7 +7,7 @@ export default function PricingFeatures() {
 				<h2 className='text-3xl font-semibold'>Todos nuestros planes incluyen</h2>
 				<div className='flex mt-10 gap-x-32'>
 					<ul className='features-list'>
-						<li>Dominio y hosting por un <strong>año</strong></li>
+						<li>Dominio y hosting incluido por un <strong>año</strong></li>
 						<li>Certificado SSL gratuito de por vida</li>
 						<li>Panel de control administrable <strong>cPanel</strong></li>
 						<li>Recursos escalables según la demanda</li>

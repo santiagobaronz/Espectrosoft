@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function page() {
 	return (
 		<div>
-			<div className='mb-[500px]'>
+			<div className='mb-[520px]'>
 				<div className='bg-blue-section h-[650px] py-20 pricing-web'>
 					<div className='container relative z-10'>
 						<div className='m-auto max-w-4xl'>
@@ -22,7 +22,7 @@ export default function page() {
 						<div className='bg-blue-section p-10 mt-14 rounded-xl flex items-center justify-between bg-lights'>
 							<div>
 								<h3 className='text-white font-medium text-2xl'>¿Necesitas un plan aún más personalizado?</h3>
-								<p className='text-white'>Ofrecemos planes a la medida con los mejores precios del mercado</p>
+								<p className='text-white'>Ofrecemos planes a la medida con los mejores precios del mercado.</p>
 							</div>
 							<Link href={'#'} className='bg-dark-blue py-3 px-12 text-white rounded-lg'> Contactar con ventas</Link>
 						</div>
@@ -36,10 +36,33 @@ export default function page() {
 
 			<PricingFeatures></PricingFeatures>
 
-			<div className='container mt-20'>
-				<h2 className='text-center mb-16 text-3xl font-semibold'>Todas las características de los planes</h2>
+			<div className='my-28 container'>
+				<div className='flex justify-between gap-x-20 items-center'>
+					<div className='w-1/2'>
+						<img src="https://i.imgur.com/p09nwQs.jpg" alt="Imagen sección desarrollo web" className='rounded-2xl' />
+					</div>
+					<div className='w-1/2'>
+						<p className='font-medium text-[#8C8C8C] text-[16px]'>ANALIZAMOS, CONSTRUIMOS Y ENTREGAMOS</p>
+						<h3 className='font-semibold text-4xl mt-6 mb-6'>Creamos soluciones que hagan crecer tu negocio o marca personal</h3>
+
+						<p className='mb-5 text-lg'>En el mundo digital actual, destacarse es crucial. En nuestra plataforma de desarrollo web, no solo creamos sitios,
+							creamos experiencias que transforman negocios y elevan marcas personales. Entendemos que cada proyecto es único,
+							por eso nos dedicamos a diseñar soluciones a medida que se adaptan a tus necesidades específicas. Nuestro equipo apasionado de desarrolladores
+							y diseñadores trabaja incansablemente para crearplataformas web que no solo son visualmente atractivas, sino también funcionales y efectivas.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div className='bg-blue-section py-32'>
+			<div className='container bg'>
+				<h2 className='text-center mb-10 text-3xl font-semibold text-white'>Todas las características de los planes</h2>
 				<Table></Table>
 			</div>
+
+			</div>
+			
 
 			<CallToAction></CallToAction>
 		</div>
