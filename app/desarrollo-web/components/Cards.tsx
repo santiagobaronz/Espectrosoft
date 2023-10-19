@@ -4,7 +4,7 @@ import { BsCurrencyDollar } from 'react-icons/bs'
 
 export default function Cards() {
 	return (
-		<div className='flex justify-center gap-x-8 mt-[105px]'>
+		<div className='flex justify-center gap-x-8 mt-[60px]'>
 			<div className='w-1/3 bg-[#BEEBFA] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 				<h2 className='font-semibold text-[28px] mb-3'>Profesional</h2>
 				<p className='text-sm font-medium mb-5'>Facilidad de uso, experiencia ampliada</p>

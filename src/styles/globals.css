@@ -75,6 +75,15 @@
 	background-position-y: 0px;
 }
 
+.bg-lights{
+	background-image: url('https://imgur.com/vOgIizg.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90%;
+    background-position-y: -60px;
+}
+
 
 .portfolio-home::-webkit-scrollbar{
     height: 6px;

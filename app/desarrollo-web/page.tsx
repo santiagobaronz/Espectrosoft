@@ -3,11 +3,12 @@ import CallToAction from '../../src/components/CallToAction';
 import Table from './components/Table';
 import Cards from './components/Cards';
 import PricingFeatures from './components/PricingFeatures';
+import Link from 'next/link';
 
 export default function page() {
 	return (
 		<div>
-			<div className='mb-96'>
+			<div className='mb-[500px]'>
 				<div className='bg-blue-section h-[650px] py-20 pricing-web'>
 					<div className='container relative z-10'>
 						<div className='m-auto max-w-4xl'>
@@ -17,6 +18,15 @@ export default function page() {
 							</p>
 						</div>
 						<Cards></Cards>
+
+						<div className='bg-blue-section p-10 mt-14 rounded-xl flex items-center justify-between bg-lights'>
+							<div>
+								<h3 className='text-white font-medium text-2xl'>¿Necesitas un plan aún más personalizado?</h3>
+								<p className='text-white'>Ofrecemos planes a la medida con los mejores precios del mercado</p>
+							</div>
+							<Link href={'#'} className='bg-dark-blue py-3 px-12 text-white rounded-lg'> Contactar con ventas</Link>
+						</div>
+
 					</div>
 				</div>
 				<svg xmlns="http://www.w3.org/2000/svg" className='relative z-0' width="100%" height="152" fill="none" preserveAspectRatio="none" viewBox="0 0 1440 152">

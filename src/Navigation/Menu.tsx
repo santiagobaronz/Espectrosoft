@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { FiChevronDown } from "react-icons/fi";
 import { RiTranslate2 } from 'react-icons/ri';
 import { infoMenu } from './Items/InfoMenu';
-import { BsArrowRightShort, BsBell } from 'react-icons/bs';
+import { BsArrowRightShort, BsBell, BsChevronRight } from 'react-icons/bs';
 import classes from '../styles/Header.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
@@ -26,7 +26,7 @@ export default function Menu() {
 
 
 	useEffect(() => {
-		setIsActive(pathname === '/web-development');
+		setIsActive(pathname === '/desarrollo-web');
 	  }, [pathname]);
 
 	const links = infoMenu.services.map((item) => (
@@ -52,12 +52,16 @@ export default function Menu() {
 
 	return (
 		<Box className={`${isActive ? 'bg-blue-section text-white' : 'bg-white border-header'}`}>
-			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8'>
-				<div className='container flex text-sm text-white justify-center items-center gap-x-3'>
-					<div className='max-lg:hidden'>
+			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8 '>
+				<div className='container flex text-sm text-white justify-center items-center'>
+					<div className='max-lg:hidden mr-3'>
 						<BsBell></BsBell>
 					</div>
-					<div>Consigue un 10% de descuento con el código ESPECTROWEB en servicios de desarrollo web</div>
+					<div>Todos nuestros planes de desarrollo web ahora incluyen dominio y hosting gratis por un año.</div>
+					<Link href={'/desarrollo-web'} className='flex justify-center items-center ml-5'>
+						<p>Ver más</p>
+						<BsChevronRight className='text-[11px] ml-2'></BsChevronRight>
+					</Link>
 				</div>
 			</div>
 
@@ -74,7 +78,7 @@ export default function Menu() {
 					</Link>
 
 					<Group h="100%" gap={25} visibleFrom="xl">
-						<Link href="/about-us" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
+						<Link href="/nosotros" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
 							Nosotros
 						</Link>
 
