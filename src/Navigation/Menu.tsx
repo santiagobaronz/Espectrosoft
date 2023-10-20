@@ -52,7 +52,7 @@ export default function Menu() {
 
 	return (
 		<Box className={`${isActive ? 'bg-blue-section text-white' : 'bg-white border-header'}`}>
-			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8 '>
+			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8 max-lg:hidden '>
 				<div className='container flex text-sm text-white justify-center items-center'>
 					<div className='max-lg:hidden mr-3'>
 						<BsBell></BsBell>
