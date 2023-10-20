@@ -4,8 +4,8 @@ import { BsCurrencyDollar } from 'react-icons/bs'
 
 export default function Cards() {
 	return (
-		<div className='flex justify-center gap-x-8 mt-[60px]'>
-			<div className='w-1/3 bg-[#BEEBFA] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
+		<div className='xl:flex justify-center gap-x-8 mt-[60px]'>
+			<div className='xl:w-1/3 max-xl:mb-10 bg-[#BEEBFA] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 				<h2 className='font-semibold text-[28px] mb-3'>Profesional</h2>
 				<p className='text-sm font-medium mb-5'>Facilidad de uso, experiencia ampliada</p>
 				<p className='text-[15px]'>¿Estás dando tus primeros pasos? El plan Profesional es una excelente opción para emprendimientos o marcas pequeñas en crecimiento.</p>
@@ -34,7 +34,7 @@ export default function Cards() {
 					</button>
 				</Link>
 			</div>
-			<div className='w-1/3 bg-[#BBFABB] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
+			<div className='xl:w-1/3 max-xl:mb-10 bg-[#BBFABB] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 				<h2 className='font-semibold text-[28px] mb-3'>Empresarial</h2>
 				<p className='text-sm font-medium mb-5'>Diseños profesionales para tu empresa</p>
 				<p className='text-[15px]'>¿Buscas expandirte? El plan Empresarial es ideal para negocios en ascenso, ofreciendo herramientas avanzadas para impulsar tu crecimiento.</p>
@@ -63,7 +63,7 @@ export default function Cards() {
 					</button>
 				</Link>
 			</div>
-			<div className='w-1/3 bg-[#E9D7FA] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
+			<div className='xl:w-1/3 bg-[#E9D7FA] p-8 rounded-xl hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 				<h2 className='font-semibold text-[28px] mb-3'>Corporativo</h2>
 				<p className='text-sm font-medium mb-5'>Moderno y funcional a gran escala</p>
 				<p className='text-[15px]'>¿Diriges una gran corporación? Nuestro plan Corporativo proporciona soluciones escalables para empresas consolidadas en busca de un éxito continuo.</p>

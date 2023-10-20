@@ -3,9 +3,9 @@ import React from 'react'
 export default function PricingFeatures() {
 	return (
 		<div className='bg-[#F4F4F6] pricing-features'>
-			<div className='container py-16'>
+			<div className='container py-16 max-lg:px-10'>
 				<h2 className='text-3xl font-semibold'>Todos nuestros planes incluyen</h2>
-				<div className='flex mt-10 gap-x-32'>
+				<div className='lg:flex mt-10 lg:gap-x-32'>
 					<ul className='features-list'>
 						<li>Dominio y hosting incluido por un <strong>año</strong></li>
 						<li>Certificado SSL gratuito de por vida</li>
