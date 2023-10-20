@@ -58,7 +58,7 @@ export default function Menu() {
 						<BsBell></BsBell>
 					</div>
 					<div>Todos nuestros planes de desarrollo web ahora incluyen dominio y hosting gratis por un año.</div>
-					<Link href={'/desarrollo-web'} className='flex justify-center items-center ml-5'>
+					<Link href={'/desarrollo-web'} className='flex justify-center items-center ml-5 max-lg:hidden'>
 						<p>Ver más</p>
 						<BsChevronRight className='text-[11px] ml-2'></BsChevronRight>
 					</Link>
