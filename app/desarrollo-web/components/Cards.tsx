@@ -18,13 +18,17 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Diseño personalizado y adaptable</p>
 				</div>
 
-				<div className='font-normal flex items-center mt-6 mb-6'>
-					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
-					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>199,99</p>
-						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
+				<div>
+					<div className='font-normal flex items-center mt-6 md:mb-6'>
+						<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
+						<div className='flex items-end'>
+							<p className='text-[40px] font-medium -ml-1'>199,99</p>
+							<p className='mb-3 ml-2 font-medium text-lg max-md:hidden'>/ pago único</p>
+						</div>
 					</div>
+					<p className='ml-2 font-normal md:hidden mb-8'>(IVA Incluido) pago único</p>
 				</div>
+
 
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $109.99 anuales.</p>
 
@@ -47,12 +51,15 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Diseño personalizado y adaptable</p>
 				</div>
 
-				<div className='font-normal flex items-center mt-6 mb-6'>
-					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
-					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>479,99</p>
-						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
+				<div>
+					<div className='font-normal flex items-center mt-6 md:mb-6'>
+						<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
+						<div className='flex items-end'>
+							<p className='text-[40px] font-medium -ml-1'>479,99</p>
+							<p className='mb-3 ml-2 font-medium text-lg max-md:hidden'>/ pago único</p>
+						</div>
 					</div>
+					<p className='ml-2 font-normal md:hidden mb-8'>(IVA Incluido) pago único</p>
 				</div>
 
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $159.99 anuales.</p>
@@ -76,13 +83,17 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Diseño personalizado y adaptable</p>
 				</div>
 
-				<div className='font-normal flex items-center mt-6 mb-6'>
-					<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
-					<div className='flex items-end'>
-						<p className='text-[40px] font-medium -ml-1'>619,99</p>
-						<p className='mb-3 ml-2 font-medium text-lg'>/ pago único</p>
+				<div>
+					<div className='font-normal flex items-center mt-6 md:mb-6'>
+						<BsCurrencyDollar className='text-[40px]'></BsCurrencyDollar>
+						<div className='flex items-end'>
+							<p className='text-[40px] font-medium -ml-1'>619,99</p>
+							<p className='mb-3 ml-2 font-medium text-lg max-md:hidden'>/ pago único</p>
+						</div>
 					</div>
+					<p className='ml-2 font-normal md:hidden mb-8'>(IVA Incluido) pago único</p>
 				</div>
+
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $249.99 anuales.</p>
 
 				<Link href={'#'}>

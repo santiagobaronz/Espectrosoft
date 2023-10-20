@@ -25,7 +25,7 @@ export default function page() {
 					<path fill="#0F172B" d="M126.597 138.74a165.412 165.412 0 0 1-67.38-52.76L0 0h1440s-20.02 25.84-59.85 32.958L211.382 150.811a165.765 165.765 0 0 1-84.785-12.071Z" />
 				</svg>
 
-				<div className='container xl:mt-72 max-xl:mb-20 max-lg:px-10'>
+				<div className='container xl:mt-72 max-xl:mb-20 max-sm:px-10'>
 					<div className='bg-blue-section p-10 mt-14 rounded-xl lg:flex items-center justify-between bg-lights'>
 						<div>
 							<h3 className='text-white font-medium text-2xl'>¿Necesitas un plan aún más personalizado?</h3>
