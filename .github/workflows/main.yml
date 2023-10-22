@@ -26,4 +26,4 @@ jobs:
         script: |
           source /home/espectro/nodevenv/espectrosoft_main/16/bin/activate && cd /home/espectro/espectrosoft_main
           npm install
-          run build
+          npm run build
