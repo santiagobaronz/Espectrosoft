@@ -1,16 +1,30 @@
-on: push
+on:
+  push:
+    branches:
+      - main
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-    
+      uses: actions/checkout@v2
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.espectrosoft.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+
+    - name: 🚀 Run commands on SSH server
+      run: |
+        echo "$SSH_PRIVATE_KEY" > ssh_key
+        chmod 600 ssh_key
+        scp -i ssh_key -P 19199 ssh_key espectro@dal3.hostclusters.com:~/.ssh/
+        ssh -i ssh_key -p 19199 espectro@dal3.hostclusters.com 'source /home/espectro/nodevenv/espectrosoft_main/16/bin/activate && cd /home/espectro/espectrosoft_main && npm install && npm run build'
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
