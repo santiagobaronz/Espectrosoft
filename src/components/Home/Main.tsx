@@ -28,7 +28,7 @@ export default function Main() {
 								<img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 object-cover" src="https://i.imgur.com/7eH2bl1.jpg" alt="" />
 								<span className="flex items-center justify-center w-10 h-10 text-xs font-medium text-black bg-blue-bg border-2 border-[#ccc] rounded-full hover:bg-gray-600 dark:border-gray-800">+10</span>
 							</div>
-							<p className='text-sm text-gray mt-2 max-md:mb-10'>Únete a la comunidad de clientes [Prueba de Build]</p>
+							<p className='text-sm text-gray mt-2 max-md:mb-10'>Únete a la comunidad de clientes</p>
 						</div>
 						<Link href={'#'} className='px-10 py-4 rounded-full bg-blue text-white font-medium'>Hablar con un especialista</Link>
 					</div>
