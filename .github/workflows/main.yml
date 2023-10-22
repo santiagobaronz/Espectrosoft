@@ -24,5 +24,6 @@ jobs:
         port: 19199
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          whoami
-          ls -al
+          source /home/espectro/nodevenv/espectrosoft_main/16/bin/activate && cd /home/espectro/espectrosoft_main
+          npm install
+          run build
