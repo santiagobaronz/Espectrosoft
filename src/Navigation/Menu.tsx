@@ -16,18 +16,46 @@ import { useDisclosure } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
+interface MenuTheme {
+	bg: string;
+	style: string;
+	divider: boolean;
+}
+
 export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 	const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-	const [isActive, setIsActive] = useState(false);
+	const [menuTheme, setMenuTheme] = useState<MenuTheme>({ bg: '#FFFFFF', style: 'dark', divider: true });
 	const theme = useMantineTheme();
 	const pathname = usePathname();
 
 
 	useEffect(() => {
-		setIsActive(pathname === '/desarrollo-web');
-	  }, [pathname]);
+		if (pathname === '/') {
+			setMenuTheme({
+				bg: '#FFFFFF',
+				style: 'dark',
+				divider: true
+			});
+			console.log(menuTheme)
+		}
+		if (pathname === '/desarrollo-web') {
+			setMenuTheme({
+				bg: '#0F172B',
+				style: 'light',
+				divider: false
+			});
+			console.log(menuTheme)
+		}
+		if (pathname === '/hosting-web') {
+			setMenuTheme({
+				bg: '#EBEFFF',
+				style: 'dark',
+				divider: false
+			});
+		}
+	}, [pathname]);
 
 	const links = infoMenu.services.map((item) => (
 		<Link key={item.title['es']} href={item.url} target={item.newTab ? '_blank' : '_self'}>
@@ -51,7 +79,7 @@ export default function Menu() {
 
 
 	return (
-		<Box className={`${isActive ? 'bg-blue-section text-white' : 'bg-white border-header'}`}>
+		<Box className={`${menuTheme.style == 'light' ? 'text-white' : 'text-black'} bg-[${menuTheme.bg}] ${menuTheme.divider ? 'border-header' : ''}`}>
 			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8 max-lg:hidden '>
 				<div className='container flex text-sm text-white justify-center items-center'>
 					<div className='max-lg:hidden mr-3'>
@@ -70,7 +98,7 @@ export default function Menu() {
 
 					<Link href={'/'}>
 						<img
-							src={isActive ? 'https://i.imgur.com/Qe9L9hT.png' : 'https://i.imgur.com/YiRVCbI.png'}
+							src={menuTheme.style == 'light' ? 'https://i.imgur.com/Qe9L9hT.png' : 'https://i.imgur.com/YiRVCbI.png'}
 							width={212}
 							height={30}
 							alt='Logo de Espectrosoft'
@@ -78,18 +106,18 @@ export default function Menu() {
 					</Link>
 
 					<Group h="100%" gap={25} visibleFrom="xl">
-						<Link href="/nosotros" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
+						<Link href="/nosotros" className={`${classes.link} text-[14.7px] ${menuTheme.style == 'light' ? 'font-normal' : 'font-medium'}`}>
 							Nosotros
 						</Link>
 
 						<HoverCard width={650} position="bottom" radius="md" shadow="md" withinPortal>
 							<HoverCard.Target>
-								<div className={`${classes.link} text-[14.7px] cursor-pointer ${isActive ? 'font-normal' : 'font-medium'}`}>
+								<div className={`${classes.link} text-[14.7px] cursor-pointer ${menuTheme.style == 'light' ? 'font-normal' : 'font-medium'}`}>
 									<Center inline>
 										<Box component="span" mr={5}>
 											Servicios y precios
 										</Box>
-										<FiChevronDown size={16} color={`${isActive ? '#FFFFFF' : '#1B75B0'}`} />
+										<FiChevronDown size={16} />
 									</Center>
 								</div>
 							</HoverCard.Target>
@@ -130,10 +158,10 @@ export default function Menu() {
 							</HoverCard.Dropdown>
 						</HoverCard>
 
-						<Link href="#" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
+						<Link href="#" className={`${classes.link} text-[14.7px] ${menuTheme.style == 'light' ? 'font-normal' : 'font-medium'}`}>
 							Portafolio
 						</Link>
-						<Link href="#" className={`${classes.link} text-[14.7px] ${isActive ? 'font-normal' : 'font-medium'}`}>
+						<Link href="#" className={`${classes.link} text-[14.7px] ${menuTheme.style == 'light' ? 'font-normal' : 'font-medium'}`}>
 							Contactanos
 						</Link>
 
@@ -142,7 +170,7 @@ export default function Menu() {
 					<Group visibleFrom="xl">
 
 						<Link href={'#'} className={`flex justify-center items-center gap-x-2 px-4 py-2 rounded-md border 
-							${isActive ? 'font-normal border-white border-opacity-50' : 'font-medium text-gray border-user'}`}>
+							${menuTheme.style == 'light' ? 'font-normal border-white border-opacity-50' : 'font-medium text-gray border-user'}`}>
 							<div className='font-normal text-[15px]'>
 								Clientes
 							</div>
@@ -158,7 +186,7 @@ export default function Menu() {
 						</Link>
 					</Group>
 
-					<Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="xl" className="max-md:mr-5" color={`${isActive ? '#FFF' : '#000'}`} />
+					<Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="xl" className="max-md:mr-5" color={`${menuTheme.style == 'light' ? '#FFF' : '#000'}`} />
 				</Group>
 			</header>
 

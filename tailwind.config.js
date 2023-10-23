@@ -31,6 +31,7 @@ module.exports = {
 			'cta': '#1D2939',
 			'light-blue': '#55A2CA',
 			'blue-bg': '#EBEFFF',
+			'hosting-web': '#EBEFFF',
 
 			'gray': 'hsl(246,  6%, 55%)',
 			'gray-200': 'hsl(246,  8%, 35%)',

@@ -38,7 +38,7 @@ export const infoMenu = {
 				es: 'Almacena los datos de un proyecto y subelo a internet.',
 				en: 'Store the data of a project and upload it to the internet.',
 			},
-			url: '/desarrollo-web',
+			url: '/hosting-web',
 			newTab: false
 		},
 		{
