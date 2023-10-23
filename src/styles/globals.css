@@ -177,3 +177,17 @@
         background-image: none;
     }
 }
+
+/* Background Menu */
+
+.menubg-white{
+	background-color: #FFFFFF;
+}
+
+.menubg-dark-blue{
+	background-color: #0F172B;
+}
+
+.menubg-light-blue{
+	background-color: #EBEFFF;
+}

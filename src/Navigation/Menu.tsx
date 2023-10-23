@@ -34,7 +34,7 @@ export default function Menu() {
 	useEffect(() => {
 		if (pathname === '/') {
 			setMenuTheme({
-				bg: '#FFFFFF',
+				bg: 'menubg-white',
 				style: 'dark',
 				divider: true
 			});
@@ -42,7 +42,7 @@ export default function Menu() {
 		}
 		if (pathname === '/desarrollo-web') {
 			setMenuTheme({
-				bg: '#0F172B',
+				bg: 'menubg-dark-blue',
 				style: 'light',
 				divider: false
 			});
@@ -50,7 +50,7 @@ export default function Menu() {
 		}
 		if (pathname === '/hosting-web') {
 			setMenuTheme({
-				bg: '#EBEFFF',
+				bg: 'menubg-light-blue',
 				style: 'dark',
 				divider: false
 			});
@@ -79,7 +79,7 @@ export default function Menu() {
 
 
 	return (
-		<Box className={`${menuTheme.style == 'light' ? 'text-white' : 'text-black'} bg-[${menuTheme.bg}] ${menuTheme.divider ? 'border-header' : ''}`}>
+		<Box className={`${menuTheme.style == 'light' ? 'text-white' : 'text-black'} ${menuTheme.bg} ${menuTheme.divider ? 'border-header' : ''}`}>
 			<div className='bg-dark-blue w-full h-11 flex items-center max-lg:py-10 text-center max-lg:px-8 max-lg:hidden '>
 				<div className='container flex text-sm text-white justify-center items-center'>
 					<div className='max-lg:hidden mr-3'>
