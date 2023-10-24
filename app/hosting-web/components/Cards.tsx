@@ -13,6 +13,7 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Almacenamiento SSD de <span className='font-medium'>3GB</span></p>
 					<p className='text-sm inline-block'><span className='font-medium'>25</span> cuentas de correo electrónico</p>
 					<p className='text-sm inline-block'><span className='font-medium'>3</span> base de datos MySQL</p>
+					<p className='text-sm inline-block'><span className='font-medium'>2GB</span> de memoria RAM</p>
 					<p className='text-sm inline-block'>Dominios <span className='font-medium'>ilimitados</span></p>
 					<p className='text-sm inline-block'><span className='font-medium'>3GB</span> de transferencia mensual</p>
 					<p className='text-sm inline-block'>Certificado SSL <span className='font-medium'>incluido</span></p>
@@ -49,6 +50,7 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Almacenamiento SSD de <span className='font-medium'>5GB</span></p>
 					<p className='text-sm inline-block'><span className='font-medium'>50</span> cuentas de correo electrónico</p>
 					<p className='text-sm inline-block'><span className='font-medium'>5</span> base de datos MySQL</p>
+					<p className='text-sm inline-block'><span className='font-medium'>2GB</span> de memoria RAM</p>
 					<p className='text-sm inline-block'>Dominios <span className='font-medium'>ilimitados</span></p>
 					<p className='text-sm inline-block'><span className='font-medium'>5GB</span> de transferencia mensual</p>
 					<p className='text-sm inline-block'>Certificado SSL <span className='font-medium'>incluido</span></p>
@@ -84,6 +86,7 @@ export default function Cards() {
 					<p className='text-sm inline-block'>Almacenamiento SSD de <span className='font-medium'>10GB</span></p>
 					<p className='text-sm inline-block'>Cuentas de correo electrónico <span className='font-medium'>ilimitadas</span></p>
 					<p className='text-sm inline-block'><span className='font-medium'>10</span> base de datos MySQL</p>
+					<p className='text-sm inline-block'><span className='font-medium'>2GB</span> de memoria RAM</p>
 					<p className='text-sm inline-block'>Dominios <span className='font-medium'>ilimitados</span></p>
 					<p className='text-sm inline-block'>Transferencia mensual <span className='font-medium'>ilimitada</span></p>
 					<p className='text-sm inline-block'>Certificado SSL <span className='font-medium'>incluido</span></p>
