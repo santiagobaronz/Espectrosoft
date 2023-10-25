@@ -40,6 +40,13 @@ export default function Menu() {
 			});
 			console.log(menuTheme)
 		}
+		if (pathname === '/nosotros') {
+			setMenuTheme({
+				bg: 'menubg-white',
+				style: 'dark',
+				divider: true
+			});
+		}
 		if (pathname === '/desarrollo-web') {
 			setMenuTheme({
 				bg: 'menubg-dark-blue',
@@ -201,9 +208,9 @@ export default function Menu() {
 				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'}>
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
-					<a href="/nosotros" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
+					<Link href="/nosotros" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
 						Nosotros
-					</a>
+					</Link>
 					<UnstyledButton className={`${classes.link} mb-4 mt-5 !font-normal`} onClick={toggleLinks}>
 						<Center inline>
 							<Box component="span" mr={5}>
@@ -213,12 +220,12 @@ export default function Menu() {
 						</Center>
 					</UnstyledButton>
 					<Collapse in={linksOpened} onClick={toggleDrawer}>{links}</Collapse>
-					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`} onClick={toggleDrawer}>
+					<Link href="#" className={`${classes.link} mb-8 mt-8 !font-normal`} onClick={toggleDrawer}>
 						Portafolio
-					</a>
-					<a href="#" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
+					</Link>
+					<Link href="#" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
 						Contactanos
-					</a>
+					</Link>
 
 					<Divider my="sm" color='#21232E43' />
 
