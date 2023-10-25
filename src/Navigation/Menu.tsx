@@ -202,7 +202,7 @@ export default function Menu() {
 				<ScrollArea h={`calc(100vh - ${rem(120)})`} mx="-md" px={'0px'}>
 					<Divider my="2px" color='#21232E43' w={'100%'} />
 
-					<a href="/about-us" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
+					<a href="/nosotros" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
 						Nosotros
 					</a>
 					<UnstyledButton className={`${classes.link} mb-4 mt-5 !font-normal`} onClick={toggleLinks}>
