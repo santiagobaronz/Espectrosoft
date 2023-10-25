@@ -46,7 +46,6 @@ export default function Menu() {
 				style: 'light',
 				divider: false
 			});
-			console.log(menuTheme)
 		}
 		if (pathname === '/hosting-web') {
 			setMenuTheme({
@@ -213,7 +212,7 @@ export default function Menu() {
 							<FiChevronDown size={16} color={'#1B75B0'} />
 						</Center>
 					</UnstyledButton>
-					<Collapse in={linksOpened}>{links}</Collapse>
+					<Collapse in={linksOpened} onClick={toggleDrawer}>{links}</Collapse>
 					<a href="#" className={`${classes.link} mb-8 mt-8 !font-normal`} onClick={toggleDrawer}>
 						Portafolio
 					</a>
