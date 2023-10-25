@@ -2,6 +2,7 @@ import React from 'react'
 import Cards from './components/Cards'
 import Link from 'next/link'
 import PricingFeatures from './components/PricingFeatures'
+import CallToAction from '../../src/components/CallToAction'
 
 export default function page() {
 	return (
@@ -42,13 +43,10 @@ export default function page() {
 					<div className='lg:w-1/2 w-full order-1 max-md:mb-10'>
 						<p className='font-medium text-[#8C8C8C] text-[16px]'>TU PROYECTO, NUESTRO COMPROMISO</p>
 						<h3 className='font-semibold text-4xl mt-6 mb-6'>Potencia tus ideas con un Hosting web flexible y escalable</h3>
-
 						<p className='mb-5 text-lg'>Descubre la libertad de crear sin límites con nuestro servicio de hosting versátil. Desde las plataformas de
 							gestión de contenido más populares hasta las aplicaciones de desarrollo más avanzadas.
 						</p>
-
 						<p className='mb-8'>Espectrosoft da <strong>soporte</strong> para aplicaciones en:</p>
-
 						<div className='md:flex gap-x-28 max-lg:mb-10'>
 							<ul className='features-list'>
 								<li>Wordpress</li>
@@ -64,14 +62,14 @@ export default function page() {
 								<li>Python</li>
 							</ul>
 						</div>
-
-
 					</div>
 					<div className='lg:w-1/2 w-full order-2'>
 						<img src="https://i.imgur.com/pmCeACR.jpg" alt="Imagen sección desarrollo web" className='rounded-2xl' />
 					</div>
 				</div>
 			</div>
+
+			<CallToAction></CallToAction>
 
 		</div>
 	)
