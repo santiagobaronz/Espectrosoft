@@ -17,10 +17,12 @@ export default function Introduction() {
 							<h2 className='md:text-3xl text-2xl font-semibold mt-3'>Somos desarrolladores de sitios web y de software</h2>
 						</div>
 						<div className='md:w-2/6 flex md:justify-center max-xl:mt-5'>
-							<div className=' bg-white md:px-12 px-6 cursor-pointer h-14 rounded-full max-xl:rounded-lg text-blue font-medium flex items-center gap-x-2'>
-								<Link href={'/desarrollo-web'} className=''>Cotizar</Link>
+							<Link href={'/desarrollo-web'} className=''>
+								<div className=' bg-white md:px-12 px-6 cursor-pointer h-14 rounded-full max-xl:rounded-lg text-blue font-medium flex items-center gap-x-2'>
+								Cotizar
 								<BsArrowRight></BsArrowRight>
-							</div>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</div>
