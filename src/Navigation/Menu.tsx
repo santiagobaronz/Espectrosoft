@@ -38,7 +38,6 @@ export default function Menu() {
 				style: 'dark',
 				divider: true
 			});
-			console.log(menuTheme)
 		}
 		if (pathname === '/nosotros') {
 			setMenuTheme({
