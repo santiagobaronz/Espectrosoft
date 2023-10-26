@@ -3,6 +3,7 @@ import Cards from './components/Cards'
 import Link from 'next/link'
 import PricingFeatures from './components/PricingFeatures'
 import CallToAction from '../../src/components/CallToAction'
+import { contactCustomHosting } from '../../src/components/contact'
 
 export default function page() {
 	return (
@@ -31,7 +32,7 @@ export default function page() {
 							<h3 className='text-white font-medium text-2xl'>¿Necesitas un plan aún más personalizado?</h3>
 							<p className='text-white max-lg:mb-7'>Ofrecemos planes a la medida con los mejores precios del mercado.</p>
 						</div>
-						<Link href={'#'} className='bg-dark-blue py-3 px-12 text-white rounded-lg max-md:block max-lg:text-center'> Contactar con ventas</Link>
+						<Link href={contactCustomHosting} target='_blank' className='bg-dark-blue py-3 px-12 text-white rounded-lg max-md:block max-lg:text-center'> Contactar con ventas</Link>
 					</div>
 				</div>
 			</div>

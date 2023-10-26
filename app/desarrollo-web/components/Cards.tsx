@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
+import { contactBussines, contactCorporate, contactProfesional } from '../../../src/components/contact'
 
 export default function Cards() {
 	return (
@@ -32,7 +33,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $109.99 anuales.</p>
 
-				<Link href={'#'}>
+				<Link href={contactProfesional} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 bg-[#1bb3f7] hover:bg-[#089EE1] transition-all'>
 						<p className='font-medium text-[17px]'>Hablar con asesor</p>
 					</button>
@@ -64,7 +65,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $159.99 anuales.</p>
 
-				<Link href={'#'}>
+				<Link href={contactBussines} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 bg-[#54de62] hover:bg-[#32D743] transition-all'>
 						<p className='font-medium text-[17px]'>Hablar con asesor</p>
 					</button>
@@ -96,7 +97,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>Dominio y hosting <strong>incluidos</strong> por un año, a partir del segundo año se hace un cobro de $249.99 anuales.</p>
 
-				<Link href={'#'}>
+				<Link href={contactCorporate} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 bg-[#907aff] hover:bg-[#6E51FF] transition-all'>
 						<p className='font-medium text-[17px]'>Hablar con asesor</p>
 					</button>

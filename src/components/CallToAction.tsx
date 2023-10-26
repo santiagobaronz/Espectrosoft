@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
+import { contactPhoneNumber } from './contact'
 
 export default function CallToAction() {
 
@@ -11,7 +13,7 @@ export default function CallToAction() {
 							<span className="block">Potencia tu presencia en internet con nosotros</span>
 						</h2>
 						<p className="mt-5 leading-6 text-white mb-8">Nuestro equipo de expertos en desarrollo web y software está listo para convertir tu visión en realidad. Descubre cómo podemos ayudarte a destacar en línea.</p>
-						<a href="#" className="px-10 py-3 bg-blue rounded-md text-white">¡Empecemos ahora!</a>
+						<Link href={contactPhoneNumber} className="px-10 py-3 bg-blue rounded-md text-white">¡Empecemos ahora!</Link>
 					</div>
 				</div>
 				<div className="px-6 pb-6 p-aspect-w-5 aspect-h-3 md:-mt-6 md:aspect-w-2 md:aspect-h-1"><div className="transform object-cover object-left-top sm:translate-x-16 lg:translate-y-20">

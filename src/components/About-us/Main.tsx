@@ -6,6 +6,7 @@ import {
 	BsPeopleFill
 }
 	from 'react-icons/bs'
+import { contactPhoneNumber } from '../contact'
 
 export default function Main() {
 
@@ -58,7 +59,7 @@ export default function Main() {
 									<p className='font-light'>Tu éxito es nuestra prioridad absoluta, brindándote soluciones que superan tus expectativas.</p>
 								</div>
 							</div>
-							<Link href={''} className='bg-blue px-10 py-3 rounded text-white hover:px-11 hover:shadow-lg transition-all'>
+							<Link href={contactPhoneNumber} className='bg-blue px-10 py-3 rounded text-white hover:px-11 hover:shadow-lg transition-all'>
 								Solicita una reunión
 							</Link>
 						</div>

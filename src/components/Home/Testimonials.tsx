@@ -3,7 +3,7 @@ import React from 'react'
 export default function Testimonials() {
 
 	return (
-		<div className='container max-lg:px-10'>
+		<div className='container max-lg:px-10 hidden'>
 			<div className='mt-28 xl:mx-20'>
 				<div>
 					<h3 className='md:text-center text-4xl font-bold mb-5'>TESTIMONIOS</h3>

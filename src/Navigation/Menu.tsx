@@ -8,13 +8,13 @@ import {
 
 import Link from 'next/link';
 import { FiChevronDown } from "react-icons/fi";
-import { RiTranslate2 } from 'react-icons/ri';
 import { infoMenu } from './Items/InfoMenu';
 import { BsArrowRightShort, BsBell, BsChevronRight } from 'react-icons/bs';
 import classes from '../styles/Header.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { contactPhoneNumber } from '../components/contact';
 
 interface MenuTheme {
 	bg: string;
@@ -155,10 +155,12 @@ export default function Menu() {
 												Estamos encantados de ayudarte en tu solicitud.
 											</Text>
 										</div>
-										<Button variant="default" className='font-medium text-[13px]'>
-											Contactar con ventas
-											<BsArrowRightShort className='text-lg ml-2'></BsArrowRightShort>
-										</Button>
+										<Link href={contactPhoneNumber} target='_blank'>
+											<Button variant="default" className='font-medium text-[13px]'>
+												Contactar con ventas
+												<BsArrowRightShort className='text-lg ml-2'></BsArrowRightShort>
+											</Button>
+										</Link>
 									</Group>
 								</div>
 							</HoverCard.Dropdown>
@@ -182,7 +184,7 @@ export default function Menu() {
 							</div>
 						</Link>
 
-						<Link href={'#'} className='bg-dark-blue px-7 py-2 rounded-md'>
+						<Link href={contactPhoneNumber} target='_blank' className='bg-dark-blue px-7 py-2 rounded-md'>
 							<div className='text-white font-normal text-[15px] my-[1px]'>
 								<div className='flex justify-center items-center'>
 									Cotizar ahora
@@ -237,7 +239,7 @@ export default function Menu() {
 							</button>
 						</Link>
 
-						<Link href={'#'}>
+						<Link href={contactPhoneNumber} target='_blank'>
 							<button className='bg-dark-blue text-white px-5 py-[9px] rounded-md max-md:w-full max-md:mb-3'>
 								Cotizar ahora
 							</button>

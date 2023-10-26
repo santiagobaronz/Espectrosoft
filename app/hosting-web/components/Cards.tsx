@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
+import { contactGold, contactPlatinum, contactSilver } from '../../../src/components/contact'
 
 export default function Cards() {
 	return (
@@ -36,7 +37,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>cPanel de última generación, SSL gratis, activación inmediata y <strong>7 días de garantía</strong> de devolución.</p>
 
-				<Link href={'#'}>
+				<Link href={contactSilver} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 text-white bg-[#1f6cf1] hover:bg-[#1755de] transition-all'>
 						<p className='font-normal text-[17px]'>Hablar con asesor</p>
 					</button>
@@ -72,7 +73,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>cPanel de última generación, SSL gratis, activación inmediata y <strong>7 días de garantía</strong> de devolución.</p>
 
-				<Link href={'#'}>
+				<Link href={contactGold} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 text-white bg-[#1f6cf1] hover:bg-[#1755de] transition-all'>
 						<p className='font-normal text-[17px]'>Hablar con asesor</p>
 					</button>
@@ -108,7 +109,7 @@ export default function Cards() {
 
 				<p className='font-normal text-sm'>cPanel de última generación, SSL gratis, activación inmediata y <strong>7 días de garantía</strong> de devolución.</p>
 
-				<Link href={'#'}>
+				<Link href={contactPlatinum} target='_blank'>
 					<button className='w-full h-[52px] rounded-xl mt-10 text-white bg-[#1f6cf1] hover:bg-[#1755de] transition-all'>
 						<p className='font-normal text-[17px]'>Hablar con asesor</p>
 					</button>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BsStars } from 'react-icons/bs'
+import { contactPhoneNumber } from '../contact'
 
 export default function Main() {
 
@@ -30,7 +31,7 @@ export default function Main() {
 							</div>
 							<p className='text-sm text-gray mt-2 max-md:mb-10'>Únete a la comunidad de clientes</p>
 						</div>
-						<Link href={'#'} className='px-10 py-4 rounded-full bg-blue text-white font-medium'>Hablar con un especialista</Link>
+						<Link href={contactPhoneNumber} className='px-10 py-4 rounded-full bg-blue text-white font-medium'>Hablar con un especialista</Link>
 					</div>
 				</div>
 			</div>

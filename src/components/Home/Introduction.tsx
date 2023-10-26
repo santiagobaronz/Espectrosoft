@@ -18,7 +18,7 @@ export default function Introduction() {
 						</div>
 						<div className='md:w-2/6 flex md:justify-center max-xl:mt-5'>
 							<div className=' bg-white md:px-12 px-6 cursor-pointer h-14 rounded-full max-xl:rounded-lg text-blue font-medium flex items-center gap-x-2'>
-								<Link href={'#'} className=''>Cotizar</Link>
+								<Link href={'/desarrollo-web'} className=''>Cotizar</Link>
 								<BsArrowRight></BsArrowRight>
 							</div>
 						</div>
@@ -28,7 +28,7 @@ export default function Introduction() {
 
 				<div>
 					<div className='w-full'>
-						<Link href={'#'} className='h-[285px] p-8 mb-7 shadow-xl hover:shadow-2xl rounded-3xl hosting flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
+						<Link href={'/hosting-web'} className='h-[285px] p-8 mb-7 shadow-xl hover:shadow-2xl rounded-3xl hosting flex items-end hover:translate-x-0.5 hover:-translate-y-0.5 transition-all'>
 							<div className='text-white w-2/3'>
 								<p className='text-[13px] text-[#ccc] max-md:hidden'>SERVICIOS DE HOSPEDAJE EN LA NUBE</p>
 								<h2 className='text-xl font-semibold mt-2'>Hospeda tu proyecto en la nube con nosotros</h2>
