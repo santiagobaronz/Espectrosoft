@@ -37,6 +37,14 @@
 	background-position-y: 0px;
 }
 
+.ecommerce-decoration{
+	background-image: url('https://i.imgur.com/vEk2kNX.png');
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position-x: 100%;
+	background-position-y: 40px;
+}
+
 
 .bg-stats{
 	background-image: url('https://imgur.com/JEaIxVD.png');
@@ -182,7 +190,7 @@
 }
 
 @media (max-width: 1400px) {
-    .pricing-web, .pricing-features, .bg-hosting-web-decoration {
+    .pricing-web, .pricing-features, .bg-hosting-web-decoration, .ecommerce-decoration {
         background-image: none;
     }
 }
