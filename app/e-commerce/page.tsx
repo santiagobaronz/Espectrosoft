@@ -55,7 +55,7 @@ export default function page() {
 						</Link>
 					</div>
 					<div className='lg:w-1/2 bg-blue-bg md:rounded-3xl rounded-md order-1'>
-						<img src="https://i.imgur.com/aF1exe7.jpg" alt="Fotografia tienda virtual" className='md:p-10 p-5 md:rounded-[70px] rounded-[25px] h-full' />
+						<img src="https://i.imgur.com/aF1exe7.jpg" alt="Fotografia tienda virtual" className='md:p-10 p-5 md:rounded-[70px] rounded-[25px]' />
 					</div>
 				</div>
 			</div>
