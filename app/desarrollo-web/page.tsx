@@ -13,7 +13,7 @@ export default function page() {
 				<div className='bg-blue-section xl:h-[650px] py-20 pricing-web max-lg:px-10'>
 					<div className='container relative z-10'>
 						<div className='m-auto max-w-4xl'>
-							<h1 className='text-center xl:text-6xl sm:text-5xl text-4xl max-sm:text-left font-bold text-white leading-[1.18]'>Planes y Precios para Servicios de Desarrollo Web</h1>
+							<h1 className='text-center xl:text-6xl sm:text-5xl text-4xl max-sm:text-left font-bold text-white text-title-space'>Planes y precios para servicios de Desarrollo Web</h1>
 							<p className='text-center text-lg mt-5 text-white md:mx-10 max-sm:text-left'>
 								Ofrecemos soluciones flexibles y escalables adaptadas a tu negocio. Descubre nuestros planes elaborados para cada tipo de persona o empresa. Desde emprendimientos en crecimiento hasta corporaciones establecidas.
 							</p>

@@ -6,9 +6,6 @@
 	border-bottom: 1px solid rgb(231, 237, 246);
 }
 
-.border-user{
-	border: 1px solid #bebebe;
-}
 
 .bg-header{
 	background-image: url('https://i.imgur.com/XrEQ6tf.png');
@@ -168,6 +165,10 @@
 	border-radius: 100%;
 }
 
+.text-title-space{
+	line-height: 1.15 !important;
+}
+
 @media (max-width: 1000px) {
     .bg-header, .bg-stats, .bg-culture {
         background-image: none;
@@ -188,6 +189,29 @@
 
 /* Background Menu */
 
+.menu-blue-button{
+	background-color: #1B75B0;
+	color: #FFF;
+}
+
+.client-light{
+	border: 1px solid #bebebe;
+	color: hsl(246,  6%, 55%);
+}
+
+.client-white{
+	border: 1px solid #FFF;
+}
+
+.client-dark{
+	border: 1px solid #00000054;
+}
+
+.menu-green-button{
+	background-color: #57D95B;
+	color: #000;
+}
+
 .menubg-white{
 	background-color: #FFFFFF;
 }
@@ -199,3 +223,8 @@
 .menubg-light-blue{
 	background-color: #EBEFFF;
 }
+
+.menubg-light-green{
+	background-color: #BBFABB;
+}
+

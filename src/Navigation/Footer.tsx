@@ -47,7 +47,7 @@ export default function Footer() {
 										<Link href="/desarrollo-web" className="text-base text-gray-500 hover:text-gray-900">Desarrollo web</Link>
 									</li>
 									<li>
-										<Link href="#" className="text-base text-gray-500 hover:text-gray-900">E-commerce</Link>
+										<Link href="/e-commerce" className="text-base text-gray-500 hover:text-gray-900">E-commerce</Link>
 									</li>
 									<li>
 										<Link href="/hosting-web" className="text-base text-gray-500 hover:text-gray-900">Alojamiento web</Link>

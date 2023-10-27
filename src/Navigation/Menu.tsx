@@ -20,44 +20,69 @@ interface MenuTheme {
 	bg: string;
 	style: string;
 	divider: boolean;
+	buttonColor: string;
+	clientButton: string;
 }
 
 export default function Menu() {
 
 	const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 	const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-	const [menuTheme, setMenuTheme] = useState<MenuTheme>({ bg: '#FFFFFF', style: 'dark', divider: true });
+	const [menuTheme, setMenuTheme] = useState<MenuTheme>(
+		{
+			bg: '#FFFFFF',
+			style: 'dark',
+			divider: true,
+			buttonColor: 'menu-blue-button',
+			clientButton: 'client-light'
+		});
 	const theme = useMantineTheme();
 	const pathname = usePathname();
-
 
 	useEffect(() => {
 		if (pathname === '/') {
 			setMenuTheme({
 				bg: 'menubg-white',
 				style: 'dark',
-				divider: true
+				divider: true,
+				buttonColor: 'menu-blue-button',
+				clientButton: 'client-light'
 			});
 		}
 		if (pathname === '/nosotros') {
 			setMenuTheme({
 				bg: 'menubg-white',
 				style: 'dark',
-				divider: true
+				divider: true,
+				buttonColor: 'menu-blue-button',
+				clientButton: 'client-white'
+			});
+		}
+		if (pathname === '/e-commerce') {
+			setMenuTheme({
+				bg: 'menubg-light-green',
+				style: 'dark',
+				divider: false,
+				buttonColor: 'menu-green-button',
+				clientButton: 'client-dark'
 			});
 		}
 		if (pathname === '/desarrollo-web') {
 			setMenuTheme({
 				bg: 'menubg-dark-blue',
 				style: 'light',
-				divider: false
+				divider: false,
+				buttonColor: 'menu-blue-button',
+				clientButton: 'client-white'
 			});
 		}
 		if (pathname === '/hosting-web') {
 			setMenuTheme({
 				bg: 'menubg-light-blue',
 				style: 'dark',
-				divider: false
+				divider: false,
+				buttonColor: 'menu-blue-button',
+				clientButton: 'client-light'
 			});
 		}
 	}, [pathname]);
@@ -169,22 +194,21 @@ export default function Menu() {
 							Portafolio
 						</Link>
 						<Link href="#" className={`${classes.link} text-[14.7px] ${menuTheme.style == 'light' ? 'font-normal' : 'font-medium'}`}>
-							Contactanos
+							Contáctanos
 						</Link>
 
 					</Group>
 
 					<Group visibleFrom="xl">
 
-						<Link href={'#'} className={`flex justify-center items-center gap-x-2 px-4 py-2 rounded-md border 
-							${menuTheme.style == 'light' ? 'font-normal border-white border-opacity-50' : 'font-medium text-gray border-user'}`}>
+						<Link href={'#'} className={`flex justify-center items-center gap-x-2 px-4 py-2 rounded-md border ${menuTheme.clientButton}`}>
 							<div className='font-normal text-[15px]'>
 								Clientes
 							</div>
 						</Link>
 
-						<Link href={contactPhoneNumber} target='_blank' className='bg-dark-blue px-7 py-2 rounded-md'>
-							<div className='text-white font-normal text-[15px] my-[1px]'>
+						<Link href={contactPhoneNumber} target='_blank' className={`${menuTheme.buttonColor == 'menu-green-button' ? `${menuTheme.buttonColor} font-medium` : `${menuTheme.buttonColor}`} px-7 py-2 rounded-md`}>
+							<div className='text-[15px] my-[1px]'>
 								<div className='flex justify-center items-center'>
 									Cotizar ahora
 								</div>
@@ -225,7 +249,7 @@ export default function Menu() {
 						Portafolio
 					</Link>
 					<Link href="#" className={`${classes.link} mb-8 mt-5 !font-normal`} onClick={toggleDrawer}>
-						Contactanos
+						Contáctanos
 					</Link>
 
 					<Divider my="sm" color='#21232E43' />

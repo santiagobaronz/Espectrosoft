@@ -25,7 +25,7 @@ export const infoMenu = {
 				es: 'Ofrece tus productos en internet mediante una tienda virtual.',
 				en: 'Offer your products on the internet through a virtual store.',
 			},
-			url: '/desarrollo-web',
+			url: '/e-commerce',
 			newTab: false
 		},
 		{

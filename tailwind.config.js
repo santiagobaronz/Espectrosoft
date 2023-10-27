@@ -32,6 +32,7 @@ module.exports = {
 			'light-blue': '#55A2CA',
 			'blue-bg': '#EBEFFF',
 			'hosting-web': '#EBEFFF',
+			'e-commerce': '#BBFABB',
 
 			'gray': 'hsl(246,  6%, 55%)',
 			'gray-200': 'hsl(246,  8%, 35%)',

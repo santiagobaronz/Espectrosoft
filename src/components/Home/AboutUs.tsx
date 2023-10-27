@@ -15,11 +15,11 @@ export default function AboutUs() {
 					<div className="md:grid grid-cols-2 grid-rows-2 gap-7 mt-12 text-center ">
 						<div className='border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5'>
 							<p className='text-4xl font-semibold'>2+</p>
-							<p className='text-gray-200 mt-1'>Años en Operación</p>
+							<p className='text-gray-200 mt-1'>Años en operación</p>
 						</div>
 						<div className='border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5'>
 							<p className='text-4xl font-semibold'>20+</p>
-							<p className='text-gray-200 mt-1'>Clientes Satisfechos</p>
+							<p className='text-gray-200 mt-1'>Clientes satisfechos</p>
 						</div>
 						<div className="row-start-2 border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl max-md:mb-5">
 							<p className='text-4xl font-semibold'>15+</p>
@@ -27,7 +27,7 @@ export default function AboutUs() {
 						</div>
 						<div className="row-start-2 border border-gray border-opacity-40 md:p-10 p-8 rounded-2xl">
 							<p className='text-4xl font-semibold'>25+</p>
-							<p className='text-gray-200 mt-1'>Proyectos Asombrosos</p>
+							<p className='text-gray-200 mt-1'>Proyectos asombrosos</p>
 						</div>
 					</div>
 
