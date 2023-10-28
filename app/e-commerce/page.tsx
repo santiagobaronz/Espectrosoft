@@ -4,6 +4,18 @@ import { BsFillCartFill } from 'react-icons/bs'
 import { contactPhoneNumber } from '../../src/components/contact'
 
 export default function page() {
+
+	const logosSlider = [
+		'https://i.imgur.com/IfGNB61.png',
+		'https://i.imgur.com/UTtHJhT.png',
+		'https://i.imgur.com/XprATCg.png',
+		'https://i.imgur.com/NVK3cAQ.png',
+		'https://i.imgur.com/vwBHgms.png',
+		'https://i.imgur.com/uXDw85c.png',
+	];
+
+
+
 	return (
 		<div className='xl:mb-20 transition-all'>
 			<div className='bg-e-commerce xl:h-[650px] py-20 max-lg:px-10 flex items-center justify-center ecommerce-decoration'>
@@ -38,7 +50,7 @@ export default function page() {
 
 			<div className='container mt-20'>
 				<div className='max-lg:px-10 lg:flex gap-x-20 items-center'>
-					
+
 					<div className='lg:w-1/2 order-2'>
 						<p className="font-medium text-[#8C8C8C] text-[16px] mb-6">PLANIFICA, PUBLICA Y VENDE TUS PRODUCTOS</p>
 						<h2 className='font-semibold text-4xl mb-8'>Impulsa las ventas de tus productos con tu nueva tienda virtual</h2>
@@ -60,7 +72,22 @@ export default function page() {
 				</div>
 			</div>
 
-
+			<div className='container mt-20'>
+				<div className=" relative m-auto w- overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[100px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
+					<div className="animate-infinite-slider flex w-[calc(250px*10)] gap-x-20">
+						{logosSlider.map((logo, index) => (
+							<div className="slide flex w-[125] items-center justify-center" key={index}>
+								<img src={logo} alt={`Logo de la marca ${index}`}  />
+							</div>
+						))}
+						{logosSlider.map((logo, index) => (
+							<div className="slide flex w-[125] items-center justify-center" key={index} >
+								<img src={logo} alt={`Logo de la marca ${index}`}  />
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
 
 		</div>
 	)

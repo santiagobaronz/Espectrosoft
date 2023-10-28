@@ -5,9 +5,20 @@ module.exports = {
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/**/*.{js,ts,jsx,tsx,mdx}',
-	], 
+	],
 
 	theme: {
+		animation: {
+			["infinite-slider"]: "infiniteSlider 80s linear infinite",
+		},
+		keyframes: {
+			infiniteSlider: {
+				"0%": { transform: "translateX(0)" },
+				"100%": {
+					transform: "translateX(calc(-250px * 5))",
+				},
+			},
+		},
 
 		screens: {
 			sm: '400px',
@@ -19,7 +30,7 @@ module.exports = {
 			center: true,
 		},
 		colors: {
-			
+
 			'blue-section': '#0F172B',
 			'text-color': '#d2d3e0bf',
 			'white': '#ffffff',
